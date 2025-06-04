@@ -19,7 +19,6 @@
     { "name": "Semi conductors" },
     { "name": "Nanotechnologies" },
     { "name": "Robotics" },
-    { "name": "Artificial Intelligence" },
     { "name": "Machine Learning" },
     { "name": "Astronomy" }
   ],
@@ -49,19 +48,32 @@
       "startDate": "2024-09-01",
       "endDate": "Present",
       "courses": [
-        "Advanced Optics",
-        "Advanced Micro and Nano Systems",
-        "Advanced Robotics",
-        "Advanced Machine Learning"
+        "Computational optics",
+        "Advanced MEMS",
+        "Microfabrication",
+        "High Performance Computing",
+        "Machine Learning",
+        "Lasers and photonics",
+        "Mobile robotics",
+        "Quantum simulation of materials",
+        "Structural biology"
       ]
     },
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
-      "studyType": "B.S.",
-      "startDate": "2013-09-01",
-      "endDate": "Present",
+      "institution": "CentraleSupélec – Université Paris-Saclay, Paris, France",
+      "area": "Engineering, double degree with EPFL",
+      "studyType": "M.S.",
+      "startDate": "2022-09-01",
+      "endDate": "2024-07-01",
       "courses": [
+        "Mathematics",
+        "Energy",
+        "Quantum physics",
+        "Nuclear engineering",
+        "Cloud Computing",
+        "Signal processing",
+        "Data science",
+        "Finance and Economics"
       ]
     },
     {
@@ -69,61 +81,100 @@
       "area": "Mechanical Engineering",
       "studyType": "B.S.",
       "startDate": "2019-09-01",
-      "endDate": "2023-07-01",
+      "endDate": "2022-07-01",
       "courses": [
+        "Mathematics",
+        "Physics",
+        "Materials science",
+        "Fluid mechanics",
+        "Programming",
+        "Dynamical systems",
+        "Structural mechanics"  
       ]
     }
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
+      "company": "Watchmaker (Mission Junior Entreprise EPFL)",
+      "position": "Maintenance Engineer",
       "website": "",
-      "startDate": "2015-08-01",
-      "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "startDate": "2025-03-01",
+      "endDate": "2025-05-01",
+      "summary": "Diagnosing, maintaining, and optimizing a LabVIEW-based machine in a high-precision manufacturing environment.",
+      "highlights": []
+    },
+    {
+      "company": "Safran Landing Systems (Mission Junior Entreprise CentraleSupélec)",
+      "position": "Data Analyst",
+      "website": "",
+      "startDate": "2024-02-01",
+      "endDate": "2024-05-01",
+      "summary": "",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Analysis of technical documents on more than 60 pieces of equipment",
+        "Retrieving PDM Data"
       ]
     },
     {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
-      "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
+      "company": "Pfeiffer Vacuum",
+      "position": "Operator Intern",
+      "website": "",
+      "startDate": "2023-07-01",
+      "endDate": "2023-08-15",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "École Polytechnique Fédérale de Lausanne, EPFL",
+      "position": "Teaching Assistant",
+      "website": "",
+      "startDate": "2021-01-01",
+      "endDate": "2025-01-01",
       "summary": "",
       "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
+        "Materials : from chemistry to properties",
+        "Programming for engineers",
+        "Mathematics",
+        "Information, computation and communication"
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
+      "company": "Association EPFL Spacecraft Team",
+      "position": "Systems Engineer",
+      "website": "https://www.epflspacecraftteam.ch",
+      "startDate": "2024-09-01",
+      "endDate": "",
+      "summary": "Student association focused on innovative satellite projects.",
       "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
+        "Simulating the degradation of solar panels in space to assess long-term efficiency",
+        "Contributing to the development of a digital twin for satellite modelling and optimization"
       ]
     },
     {
-      "organization": "",
-      "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
+      "company": "Association Forum CentraleSupélec",
+      "position": "Event & Quality Manager",
+      "website": "https://www.site.forum-cs.fr",
+      "startDate": "2022-01-01",
+      "endDate": "2024-01-01",
+      "summary": "Student association organizing a major Business Forum involving 200+ companies and €1.3 million turnover.",
       "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
+        "Relations with partner companies and event logistics",
+        "Quality manager of the event team, preparation of the annual audit",
+        "Development of algorithms for task automation"
+      ]
+    },
+    {
+      "company": "USC Lausanne",
+      "position": "Sponsorship Manager",
+      "website": "https://usclausanne.ch",
+      "startDate": "2024-09-01",
+      "endDate": "",
+      "summary": "Student surf association at EPFL & UNIL organizing water sports and community events.",
+      "highlights": [
+        "Organized surf, pumpfoil, winch surf, and wakesurf sessions for students",
+        "Managed partnerships and sponsorship acquisition for student activities"
       ]
     }
   ],
