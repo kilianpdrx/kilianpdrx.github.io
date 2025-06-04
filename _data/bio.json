@@ -6,19 +6,22 @@
     "email": "kilian.pouderoux@epfl.ch",
     "phone": "",
     "website": "https://kilianpdrx.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "summary": "Master student in Microengineering at EPFL. I expect to graduate in winter, 2026.",
+    "location": { "address": "", "postalCode": "2", "city": "Lausanne", "countryCode": "CH", "region": "" },
     "profiles": [
       { "network": "github", "username": "kilianpdrx", "url": "https://github.com/kilianpdrx" },
-      { "network": "linkedin", "username": "kilianpdrx", "url": "www.linkedin.com/in/kilian-pouderoux-502184248" }
+      { "network": "linkedin", "username": "kilianpdrx", "url": "https://www.linkedin.com/in/kilian-pouderoux-502184248/" }
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
+    { "name": "Optics" },
+    { "name": "Computational science" },
+    { "name": "Semi conductors" },
+    { "name": "Nanotechnologies" },
     { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Artificial Intelligence" },
+    { "name": "Machine Learning" },
+    { "name": "Astronomy" }
   ],
   "skills": [
     {
