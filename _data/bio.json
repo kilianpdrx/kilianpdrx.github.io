@@ -26,20 +26,50 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+      "keywords": [ "C", "C++", "Python", "Bash" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+      "keywords": [ "MacOS", "Linux", "Git/GitHub" ]
+    },
+    {
+      "name": "Hardware",
+      "keywords": [ "Arduino", "Raspberry Pi" ]
+    },
+    {
+      "name": "Software",
+      "keywords": [ "Matlab", "LabView", "Catia", "Microsoft Office" ]
     }
   ],
   "education": [
+    {
+      "institution": "Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland",
+      "area": "Microengineering (expected Winter, 2026)",
+      "studyType": "M.S.",
+      "startDate": "2024-09-01",
+      "endDate": "Present",
+      "courses": [
+        "Advanced Optics",
+        "Advanced Micro and Nano Systems",
+        "Advanced Robotics",
+        "Advanced Machine Learning"
+      ]
+    },
     {
       "institution": "University of Hawaii, Honolulu, HI",
       "area": "Computer Science (expected Spring, 2018)",
       "studyType": "B.S.",
       "startDate": "2013-09-01",
       "endDate": "Present",
+      "courses": [
+      ]
+    },
+    {
+      "institution": "Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland",
+      "area": "Mechanical Engineering",
+      "studyType": "B.S.",
+      "startDate": "2019-09-01",
+      "endDate": "2023-07-01",
       "courses": [
       ]
     }
