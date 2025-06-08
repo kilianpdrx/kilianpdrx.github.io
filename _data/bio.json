@@ -1,3 +1,4 @@
+
 {
   "basics": {
     "name": "Kilian Pouderoux",
@@ -7,10 +8,10 @@
     "phone": "",
     "website": "https://kilianpdrx.github.io",
     "summary": "Master student in Microengineering at EPFL. I expect to graduate in winter, 2026.",
-    "location": { "address": "", "postalCode": "2", "city": "Lausanne", "countryCode": "CH", "region": "" },
+    "location": { "address": "", "postalCode": "", "city": "Lausanne", "countryCode": "CH", "region": "" },
     "profiles": [
       { "network": "github", "username": "kilianpdrx", "url": "https://github.com/kilianpdrx" },
-      { "network": "linkedin", "username": "kilianpdrx", "url": "https://www.linkedin.com/in/kilian-pouderoux-502184248/" }
+      { "network": "linkedin", "username": "Kilian Pouderoux", "url": "https://www.linkedin.com/in/kilian-pouderoux-502184248/" }
     ]
   },
   "interests": [
@@ -29,7 +30,7 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Linux", "Git/GitHub" ]
+      "keywords": [ "MacOS", "Linux", "Git" ]
     },
     {
       "name": "Hardware",
@@ -153,6 +154,18 @@
       ]
     },
     {
+      "company": "USC Lausanne",
+      "position": "Sponsorship Manager",
+      "website": "https://usclausanne.ch",
+      "startDate": "2024-09-01",
+      "endDate": "",
+      "summary": "Student surf association at EPFL & UNIL organizing water sports and community events.",
+      "highlights": [
+        "Organized surf, pumpfoil, winch surf, and wakesurf sessions for students",
+        "Managed partnerships and sponsorship acquisition for student activities"
+      ]
+    },
+    {
       "company": "Association Forum CentraleSupélec",
       "position": "Event & Quality Manager",
       "website": "https://www.site.forum-cs.fr",
@@ -164,19 +177,8 @@
         "Quality manager of the event team, preparation of the annual audit",
         "Development of algorithms for task automation"
       ]
-    },
-    {
-      "company": "USC Lausanne",
-      "position": "Sponsorship Manager",
-      "website": "https://usclausanne.ch",
-      "startDate": "2024-09-01",
-      "endDate": "",
-      "summary": "Student surf association at EPFL & UNIL organizing water sports and community events.",
-      "highlights": [
-        "Organized surf, pumpfoil, winch surf, and wakesurf sessions for students",
-        "Managed partnerships and sponsorship acquisition for student activities"
-      ]
     }
+    
   ],
   "awards": [
     {
