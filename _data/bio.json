@@ -45,7 +45,8 @@
     {
       "institution": "Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland",
       "area": "Microengineering (expected Winter, 2026)",
-      "studyType": "M.S.",
+      "studyType": "Master of Science",
+      "website": "https://www.epfl.ch",
       "startDate": "2024-09-01",
       "endDate": "Present",
       "courses": [
@@ -62,8 +63,9 @@
     },
     {
       "institution": "CentraleSupélec – Université Paris-Saclay, Paris, France",
-      "area": "Engineering, double degree with EPFL",
-      "studyType": "M.S.",
+      "area": "Engineering, highly selective double degree with EPFL",
+      "studyType": "Diplôme d'ingenieur",
+      "website": "https://www.centralesupelec.fr",
       "startDate": "2022-09-01",
       "endDate": "2024-07-01",
       "courses": [
@@ -80,7 +82,8 @@
     {
       "institution": "Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland",
       "area": "Mechanical Engineering",
-      "studyType": "B.S.",
+      "studyType": "Bachelor of Science",
+      "website": "https://www.epfl.ch",
       "startDate": "2019-09-01",
       "endDate": "2022-07-01",
       "courses": [
