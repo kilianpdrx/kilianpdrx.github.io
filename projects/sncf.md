@@ -2,15 +2,14 @@
 layout: project
 type: project
 image: img/carrie/logo_carre.png
-title: "Carrie"
+title: "Catenary lifting"
 date: 2024
 published: true
 labels:
   - Python
-  - Raspberry Pi
-  - Computer Vision
-  - Person Re-Indentification
-summary: "An autonomous robot for carrying charges"
+  - Data science
+  - Statistics
+summary: "Data analysis and development of prediction models for catenary liQing"
 ---
 
 <img class="img-fluid" src="../img/carrie/robot.jpg">

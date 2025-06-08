@@ -2,15 +2,13 @@
 layout: project
 type: project
 image: img/carrie/logo_carre.png
-title: "Carrie"
-date: 2024
-published: true
+title: "Lasers"
+date: Ongoing
+published: false
 labels:
   - Python
-  - Raspberry Pi
-  - Computer Vision
-  - Person Re-Indentification
-summary: "An autonomous robot for carrying charges"
+  - Prototyping
+summary: "Autonomous drone"
 ---
 
 <img class="img-fluid" src="../img/carrie/robot.jpg">

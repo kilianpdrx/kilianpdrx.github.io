@@ -2,15 +2,15 @@
 layout: project
 type: project
 image: img/carrie/logo_carre.png
-title: "Carrie"
+title: "BOMR"
 date: 2024
 published: true
 labels:
   - Python
-  - Raspberry Pi
+  - Thymio robot
   - Computer Vision
-  - Person Re-Indentification
-summary: "An autonomous robot for carrying charges"
+  - SLAM
+summary: "Robot control and SLAM in a dynamic environment"
 ---
 
 <img class="img-fluid" src="../img/carrie/robot.jpg">
