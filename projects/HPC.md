@@ -20,8 +20,8 @@ Carrie is an autonomous robot developed in the course "Products Design and Syste
 It's able to track and follow its owner, differentiating it from the other persons in the robot's field of view.
 
 <div class="ratio ratio-4x3 my-4">
-  <iframe src="https://www.youtube.com/embed/NrLFIpm0wps" 
-          title="Overview of Hackystat" 
+  <iframe src="https://drive.google.com/file/d/1wTRObgNCnMcC-vWDzunhK5DmzSavFFN7/view?usp=share_link" 
+          title="Final project" 
           allowfullscreen>
   </iframe>
 </div>
