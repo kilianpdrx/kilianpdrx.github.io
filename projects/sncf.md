@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/carrie/logo_carre.png
+image: img/sncf/catenary.jpg
 title: "Catenary lifting"
 date: 2024
 published: true

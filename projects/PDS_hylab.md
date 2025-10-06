@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/carrie/logo_carre.png
-title: "Lasers"
+title: "Semester project - electrode optimization"
 date: Ongoing
 published: true
 labels:

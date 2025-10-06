@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/carrie/logo_carre.png
-title: "BOMR"
+title: "EDF"
 date: 2024
 published: true
 labels:

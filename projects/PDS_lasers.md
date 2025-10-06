@@ -1,14 +1,19 @@
 ---
 layout: project
 type: project
-image: img/carrie/logo_carre.png
-title: "Lasers"
+image: img/PDS_lasers/lapd.png
+title: "Semester project - optical computing"
 date: Ongoing
 published: true
 labels:
+  - Pytorch
+  - Optical computing
+  - HPC
+  - SLURM
   - Python
-  - Prototyping
-summary: "Autonomous drone"
+  - Diffusion models
+  - AI
+summary: "SLM mask design with diffusion models for optical computing"
 ---
 
 <img class="img-fluid" src="../img/carrie/robot.jpg">
