@@ -203,7 +203,7 @@ layout: home
     </div>
     {% endif %}
 
-    {% if site.data.bio.volunteer %}
+    <!-- {% if site.data.bio.volunteer %}
       <div class="row pt-4 align-items-start">
         <div class="col-lg-3">
           <h1 class="display-6 text-start m-0">Activities</h1>
@@ -242,6 +242,65 @@ layout: home
             </div>
           </div>
           {% endfor %}
+        </div>
+      </div>
+    {% endif %} -->
+
+    {% if site.data.bio.volunteer %}
+      <div class="row pt-4 align-items-start">
+        <div class="col-lg-3">
+          <h1 class="display-6 text-start m-0">Activities</h1>
+        </div>
+        <div class="col-lg-9">
+
+          {%- assign volunteer_groups = site.data.bio.volunteer | group_by: "organization" -%}
+          {%- for group in volunteer_groups -%}
+
+            <!-- Org header (shown once) -->
+            <div class="row">
+              <div class="col-9">
+                <p class="fs-5 mb-1"><b>{{ group.name }}</b></p>
+                {%- assign first = group.items[0] -%}
+                {%- if first.website and first.website != "" -%}
+                  <p class="mb-2">
+                    <a href="{{ first.website }}">{{ first.website | remove: "http://" | remove: "https://" }}</a>
+                  </p>
+                {%- endif -%}
+              </div>
+              <div class="col-3"></div>
+            </div>
+
+            {%- assign entries = group.items | sort: "startDate" | reverse -%}
+            {%- for entry in entries -%}
+              <div class="row mb-3">
+                <div class="col-9">
+                  <p class="mb-0"><b>{{ entry.position }}</b></p>
+                  {%- if entry.summary %}<p class="mb-0">{{ entry.summary }}</p>{% endif %}
+                  {%- if entry.highlights %}
+                    <ul class="mb-1">
+                      {%- for h in entry.highlights -%}
+                        <li>{{ h }}</li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                </div>
+                <div class="col-3">
+                  <p class="m-0 text-end">
+                    {%- if entry.startDate -%}{{ entry.startDate | slice: 0,4 }}{%- endif -%}
+                    {%- if entry.startDate and entry.endDate -%}–{%- endif -%}
+                    {%- if entry.endDate -%}
+                      {%- if entry.endDate != "Present" -%}
+                        {{ entry.endDate | slice: 0,4 }}
+                      {%- else -%}
+                        {{ entry.endDate }}
+                      {%- endif -%}
+                    {%- endif -%}
+                  </p>
+                </div>
+              </div>
+            {%- endfor -%}
+
+          {%- endfor -%}
         </div>
       </div>
     {% endif %}

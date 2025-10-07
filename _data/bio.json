@@ -148,14 +148,27 @@
   "volunteer": [
     {
       "company": "Association EPFL Spacecraft Team",
+      "position": "Pole Leader - Ground Segment",
+      "website": "https://www.epflspacecraftteam.ch",
+      "startDate": "2025-08-01",
+      "endDate": "",
+      "summary": "Student association focused on the design, development, and launch of innovative satellite and space related projects.",
+      "highlights": [
+        "Lead a team of 8 to develop and operate ground stations for satellite communications.",
+        "Develop and assemble an X-band antenna, the first student-operated system of its kind.",
+        "Design and implement the antenna’s control software."
+      ]
+    },
+    {
+      "company": "Association EPFL Spacecraft Team",
       "position": "Systems Engineer",
       "website": "https://www.epflspacecraftteam.ch",
       "startDate": "2024-09-01",
-      "endDate": "",
-      "summary": "Student association focused on innovative satellite projects.",
+      "endDate": "2025-08-01",
+      "summary": "Student association focused on the design, development, and launch of innovative satellite and space related projects.",
       "highlights": [
-        "Simulating the degradation of solar panels in space to assess long-term efficiency",
-        "Contributing to the development of a digital twin for satellite modelling and optimization"
+        "Contribute to a digital twin for satellite modeling, enabling faster design iterations and performance optimization.",
+        "Perform tradeoff analyses on critical satellite parameters, guiding key design decisions and improving mission reliability."
       ]
     },
     {
