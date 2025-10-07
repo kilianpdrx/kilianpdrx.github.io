@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/HPC/ok.ong
+image: img/HPC/ok.png
 title: "HPC"
 date: 2025
 published: true
