@@ -26,7 +26,7 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Python", "Bash" ]
+      "keywords": [ "C", "C++", "Python (Numpy, Pandas, Scikit, Pytorch, OpenCV)", "Bash", "CUDA", "MPI", "Bash", "SQL"]
     },
     {
       "name": "Toolsets/OS",
@@ -38,13 +38,13 @@
     },
     {
       "name": "Software",
-      "keywords": [ "Matlab", "LabView", "Catia", "Microsoft Office" ]
+      "keywords": [ "Matlab", "LabView", "Catia", "Microsoft Office", "Docker"]
     }
   ],
   "education": [
     {
       "institution": "Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland",
-      "area": "Microengineering (expected Winter, 2026)",
+      "area": "Microengineering, minor in Computational Science and Engineering",
       "studyType": "Master of Science",
       "website": "https://www.epfl.ch",
       "startDate": "2024-09-01",
@@ -160,6 +160,18 @@
     },
     {
       "company": "USC Lausanne",
+      "position": "Vice President - Logistics & Finance",
+      "website": "https://usclausanne.ch",
+      "startDate": "2024-09-01",
+      "endDate": "",
+      "summary": "Student surf association at EPFL & UNIL organizing water sports and community events.",
+      "highlights": [
+        "Organized surf, pumpfoil, winch surf, and wakesurf sessions for students",
+        "Managed partnerships and sponsorship acquisition for student activities"
+      ]
+    },
+    {
+      "company": "USC Lausanne",
       "position": "Sponsorship Manager",
       "website": "https://usclausanne.ch",
       "startDate": "2024-09-01",
@@ -176,13 +188,16 @@
       "website": "https://www.site.forum-cs.fr",
       "startDate": "2022-01-01",
       "endDate": "2024-01-01",
-      "summary": "Student association organizing a major Business Forum involving 200+ companies and €1.3 million turnover.",
+      "summary": "Student association organizing a major business forum with 200+ companies and a turnover of €1.3 million.",
       "highlights": [
-        "Relations with partner companies and event logistics",
-        "Quality manager of the event team, preparation of the annual audit",
-        "Development of algorithms for task automation"
+        "Manage relations with partner companies and coordinate event logistics for exhibitors and participants.",
+        "Ensure quality management of the event, including preparation of the annual audit and compliance with ISO standards.",
+        "Develop automation algorithms to streamline repetitive tasks, reducing workload and improving team efficiency"
       ]
     }
+
+
+
     
   ],
   "awards": [
