@@ -111,7 +111,7 @@ layout: home
     </div>
     {% endif %}
 
-    {% if site.data.bio.work %}
+    <!-- {% if site.data.bio.work %}
     <div class="row pt-4 align-items-start">
       <div class="col-lg-3">
         <h1 class="display-6 text-start m-0">Work</h1>
@@ -148,6 +148,55 @@ layout: home
               {% endif %}
               </p>
             </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %} -->
+
+    {% if site.data.bio.work %}
+    <div class="row pt-4 align-items-start">
+      <div class="col-lg-3">
+        <h1 class="display-6 text-start m-0">Work</h1>
+      </div>
+      <div class="col-lg-9">
+        {% assign grouped_work = site.data.bio.work | group_by: "company" %}
+        {% for group in grouped_work %}
+          <div class="mb-4">
+            <p class="fs-5 mb-1"><b>{{ group.name }}</b></p>
+            {% for entry in group.items %}
+              <div class="ms-3 mb-2">
+                <p class="mb-0"><b>{{ entry.position }}</b>
+                  {% if entry.startDate or entry.endDate %}
+                    <span class="text-muted"> —
+                      {% if entry.startDate %}
+                        {{ entry.startDate | date: "%b %Y" }}
+                      {% endif %}
+                      {% if entry.startDate and entry.endDate %}
+                        –
+                      {% endif %}
+                      {% if entry.endDate %}
+                        {% if entry.endDate != "Present" %}
+                          {{ entry.endDate | date: "%b %Y" }}
+                        {% else %}
+                          {{ entry.endDate }}
+                        {% endif %}
+                      {% endif %}
+                    </span>
+                  {% endif %}
+                </p>
+                {% if entry.summary %}
+                  <p class="mb-0">{{ entry.summary }}</p>
+                {% endif %}
+                {% if entry.highlights %}
+                  <ul class="mb-1">
+                    {% for highlight in entry.highlights %}
+                      <li>{{ highlight }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            {% endfor %}
           </div>
         {% endfor %}
       </div>
