@@ -6,7 +6,7 @@
     "picture": "https://media.licdn.com/dms/image/v2/D4E03AQEk5rwsS-wqgA/profile-displayphoto-shrink_200_200/B4EZVmmamaHcAY-/0/1741183102106?e=1762387200&v=beta&t=9-i7okZHxpYHthy2Ai6JcitiwT-r-BYV60eCvo79ubQ",
     "email": "kilian.pouderoux@epfl.ch",
     "phone": "",
-    "website": "https://kilianpdrx.github.io",
+    "website": "",
     "summary": "Master student in Microengineering at EPFL. Expected graduation in late 2026",
     "location": { "address": "", "postalCode": "", "city": "Lausanne", "countryCode": "CH", "region": "" },
     "profiles": [
@@ -41,6 +41,10 @@
     {
       "name": "Software",
       "keywords": [ "Matlab", "LabView", "Catia", "Microsoft Office", "Docker"]
+    },
+    {
+      "name": "Languages",
+      "keywords": [ "French (native)", "English (C1)", "Italian (A2)" ]
     }
   ],
   "education": [
@@ -137,7 +141,7 @@
       "position": "Teaching Assistant",
       "website": "",
       "startDate": "2021-01-01",
-      "endDate": "2025-01-01",
+      "endDate": "2026-01-01",
       "summary": "",
       "highlights": [
         "Materials : from chemistry to properties",
@@ -149,7 +153,7 @@
   ],
   "volunteer": [
     {
-      "company": "Association EPFL Spacecraft Team",
+      "company": "EPFL Spacecraft Team",
       "position": "Pole Leader - Ground Segment",
       "website": "https://www.epflspacecraftteam.ch",
       "startDate": "2025-08-01",
