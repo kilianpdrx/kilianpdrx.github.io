@@ -12,6 +12,7 @@ labels:
   - SLAM
   - OpenCV
 summary: "Robot control and SLAM in a dynamic environment"
+period: EPFL Bachelor
 ---
 
 

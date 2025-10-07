@@ -10,6 +10,7 @@ labels:
   - Matlab
   - LabView
 summary: "Oscillo to Data — Automated Signal Extraction Pipeline"
+period: EPFL Bachelor
 ---
 
 This project aimed to develop a complete data extraction and visualization toolchain linking three environments — C, LabVIEW, and MATLAB — to convert oscilloscope screenshots into numerical data and fitted sinusoidal models. The process begins with a C program that analyzes image pixels, identifies color-coded traces, and exports their coordinates. LabVIEW acts as the central orchestrator, managing user interaction, file exchanges, and automated calls to the other programs. Finally, MATLAB performs perspective correction, signal reconstruction, and sinusoidal fitting, generating a clean, annotated plot and PDF report summarizing all waveform parameters (amplitude, offset, frequency, phase).

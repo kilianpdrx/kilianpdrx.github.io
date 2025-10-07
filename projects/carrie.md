@@ -11,6 +11,7 @@ labels:
   - Computer Vision
   - Person Re-Indentification
 summary: "An autonomous robot for carrying charges"
+period: EPFL Master
 ---
 
 <img class="img-fluid d-block mx-auto" 

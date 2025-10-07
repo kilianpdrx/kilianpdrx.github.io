@@ -10,6 +10,7 @@ labels:
   - Data science
   - Statistics
 summary: "Data analysis and development of prediction models for catenary litfing"
+period: CentraleSupélec
 ---
 
 

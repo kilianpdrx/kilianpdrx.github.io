@@ -9,6 +9,7 @@ labels:
   - Python
   - Prototyping
 summary: "Autonomous drone"
+period: CentraleSupélec
 ---
 
 
