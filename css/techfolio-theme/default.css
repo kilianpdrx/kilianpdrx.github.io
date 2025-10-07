@@ -48,24 +48,3 @@ a {
   background-color: var(--bs-white);
   border-top: none;
 }
-
-/* Make all project images and videos uniform width and centered */
-.media-section img.project-media,
-.media-section iframe.project-media {
-  max-width: 700px !important;   /* force a consistent max width */
-  width: 100% !important;        /* responsive scaling */
-  height: auto !important;       /* prevent distortion */
-  margin: 1rem auto !important;
-  display: block !important;
-  border-radius: 6px;
-}
-
-
-/* img, iframe {
-  max-width: 700px;
-  width: 100%;
-  margin: 1rem auto;
-  display: block;
-  height: auto;
-} */
-

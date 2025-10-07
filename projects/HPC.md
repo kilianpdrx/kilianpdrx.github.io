@@ -57,7 +57,7 @@ Overall, the parallelization led to significant speedups and scalability improve
 </div> -->
 
 
-<div class="container py-3 media-section">
+<div class="container py-3 media-section" style="max-width: 700px; width: 100%; margin: 1rem auto; display: block;">
   <p>
     As part of the Parallel and High Performance Computing course, I implemented and analyzed parallel versions of a tsunami simulation based on the shallow water equations. Starting from a sequential C++ solver, I developed both MPI and CUDA implementations to accelerate the numerical computations. 
   </p>
