@@ -253,10 +253,10 @@ layout: home
         </div>
         <div class="col-lg-9">
 
-          {%- assign volunteer_groups = site.data.bio.volunteer | group_by: "organization" -%}
+          {%- assign volunteer_groups = site.data.bio.volunteer | group_by: "company" -%}
           {%- for group in volunteer_groups -%}
 
-            <!-- Org header (shown once) -->
+            <!-- Company name and website (shown once per group) -->
             <div class="row">
               <div class="col-9">
                 <p class="fs-5 mb-1"><b>{{ group.name }}</b></p>
@@ -270,12 +270,15 @@ layout: home
               <div class="col-3"></div>
             </div>
 
+            <!-- Each role inside that company -->
             {%- assign entries = group.items | sort: "startDate" | reverse -%}
             {%- for entry in entries -%}
               <div class="row mb-3">
                 <div class="col-9">
                   <p class="mb-0"><b>{{ entry.position }}</b></p>
-                  {%- if entry.summary %}<p class="mb-0">{{ entry.summary }}</p>{% endif %}
+                  {%- if entry.summary %}
+                    <p class="mb-0">{{ entry.summary }}</p>
+                  {%- endif %}
                   {%- if entry.highlights %}
                     <ul class="mb-1">
                       {%- for h in entry.highlights -%}
@@ -286,7 +289,9 @@ layout: home
                 </div>
                 <div class="col-3">
                   <p class="m-0 text-end">
-                    {%- if entry.startDate -%}{{ entry.startDate | slice: 0,4 }}{%- endif -%}
+                    {%- if entry.startDate -%}
+                      {{ entry.startDate | slice: 0,4 }}
+                    {%- endif -%}
                     {%- if entry.startDate and entry.endDate -%}–{%- endif -%}
                     {%- if entry.endDate -%}
                       {%- if entry.endDate != "Present" -%}
