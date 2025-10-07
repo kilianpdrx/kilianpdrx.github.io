@@ -256,56 +256,55 @@ layout: home
           {%- assign volunteer_groups = site.data.bio.volunteer | group_by: "company" -%}
           {%- for group in volunteer_groups -%}
 
-            <!-- Company name and website (shown once per group) -->
-            <div class="row">
-              <div class="col-9">
-                <p class="fs-5 mb-1"><b>{{ group.name }}</b></p>
-                {%- assign first = group.items[0] -%}
-                {%- if first.website and first.website != "" -%}
-                  <p class="mb-2">
-                    <a href="{{ first.website }}">{{ first.website | remove: "http://" | remove: "https://" }}</a>
-                  </p>
-                {%- endif -%}
-              </div>
-              <div class="col-3"></div>
-            </div>
+            <!-- COMPANY HEADER -->
+            <div class="mb-4">
+              {% assign first = group.items[0] %}
+              <p class="fs-5 mb-1"><b>{{ group.name }}</b></p>
 
-            <!-- Each role inside that company -->
-            {%- assign entries = group.items | sort: "startDate" | reverse -%}
-            {%- for entry in entries -%}
-              <div class="row mb-3">
-                <div class="col-9">
-                  <p class="mb-0"><b>{{ entry.position }}</b></p>
-                  {%- if entry.summary %}
-                    <p class="mb-0">{{ entry.summary }}</p>
-                  {%- endif %}
-                  {%- if entry.highlights %}
+              {% if first.website %}
+                <p class="mb-1">
+                  <a href="{{ first.website }}">{{ first.website | remove: "http://" | remove: "https://" }}</a>
+                </p>
+              {% endif %}
+
+              {% if first.summary %}
+                <p class="mb-2 text-muted">{{ first.summary }}</p>
+              {% endif %}
+
+              <!-- POSITIONS UNDER THAT COMPANY -->
+              {% assign entries = group.items | sort: "startDate" | reverse %}
+              {% for entry in entries %}
+                <div class="ms-3 mb-2">
+                  <p class="mb-0">
+                    <b>{{ entry.position }}</b>
+                    {% if entry.startDate or entry.endDate %}
+                      <span class="text-muted">
+                        —
+                        {% if entry.startDate %}
+                          {{ entry.startDate | date: "%Y" }}
+                        {% endif %}
+                        {% if entry.startDate and entry.endDate %}–{% endif %}
+                        {% if entry.endDate %}
+                          {% if entry.endDate != "Present" %}
+                            {{ entry.endDate | date: "%Y" }}
+                          {% else %}
+                            {{ entry.endDate }}
+                          {% endif %}
+                        {% endif %}
+                      </span>
+                    {% endif %}
+                  </p>
+                  {% if entry.highlights %}
                     <ul class="mb-1">
-                      {%- for h in entry.highlights -%}
+                      {% for h in entry.highlights %}
                         <li>{{ h }}</li>
-                      {%- endfor -%}
+                      {% endfor %}
                     </ul>
-                  {%- endif -%}
+                  {% endif %}
                 </div>
-                <div class="col-3">
-                  <p class="m-0 text-end">
-                    {%- if entry.startDate -%}
-                      {{ entry.startDate | slice: 0,4 }}
-                    {%- endif -%}
-                    {%- if entry.startDate and entry.endDate -%}–{%- endif -%}
-                    {%- if entry.endDate -%}
-                      {%- if entry.endDate != "Present" -%}
-                        {{ entry.endDate | slice: 0,4 }}
-                      {%- else -%}
-                        {{ entry.endDate }}
-                      {%- endif -%}
-                    {%- endif -%}
-                  </p>
-                </div>
-              </div>
-            {%- endfor -%}
-
-          {%- endfor -%}
+              {% endfor %}
+            </div>
+          {% endfor %}
         </div>
       </div>
     {% endif %}
