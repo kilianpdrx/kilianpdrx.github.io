@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/Octorange/octorange.png
+image: img/Octorange/octorange.jpg
 title: "Octorange"
 date: 2024
 published: true

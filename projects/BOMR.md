@@ -23,8 +23,11 @@ It's able to track and follow its owner, differentiating it from the other perso
 
 <div class="ratio ratio-4x3 my-4">
   <iframe 
-    src="https://drive.google.com/file/d/1wTRObgNCnMcC-vWDzunhK5DmzSavFFN7/view?usp=share_link"
+    src="https://drive.google.com/file/d/1wTRObgNCnMcC-vWDzunhK5DmzSavFFN7/preview"
     title="Final project"
     allowfullscreen>
   </iframe>
 </div>
+
+
+
