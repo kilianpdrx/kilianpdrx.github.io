@@ -15,7 +15,7 @@ summary: "An autonomous robot for carrying charges"
 
 <img class="img-fluid d-block mx-auto" 
      src="../img/carrie/robot.jpg" 
-     style="max-width: 400px; height: auto;">
+     style="max-width: 800px; height: auto;">
 
 
 As part of the Product Design and Systems Engineering in a Team course, I contributed to the development of CarriE, an autonomous robot designed to help users carry heavy loads in public indoor spaces such as airports, shopping malls, and train stations. The system combines computer vision for person re-identification, ultrasonic sensors for obstacle detection, and a mobile interface enabling both autonomous and manual control. My main role focused on implementing the camera-based tracking system, developing the web interface between the Raspberry Pi and Arduino, and creating the mobile app used to control the robot. The prototype successfully demonstrated reliable user tracking and smooth navigation, validating the concept for large-scale deployment within a rental-based mobility service.
@@ -27,5 +27,5 @@ To enable autonomous following, the CarriE robot relies on a person re-identific
 
 
 <p align="center">
-  <img src="../img/carrie/comm.png" alt="Communication architecture between camera, Raspberry Pi and computer" style="max-width: 500px; margin-top: 1rem;">
+  <img src="../img/carrie/comm.png" alt="Communication architecture between camera, Raspberry Pi and computer" style="max-width: 600px; margin-top: 1rem;">
 </p>
