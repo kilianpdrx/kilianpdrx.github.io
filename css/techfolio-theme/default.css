@@ -48,3 +48,13 @@ a {
   background-color: var(--bs-white);
   border-top: none;
 }
+
+
+.media-section .project-media {
+  max-width: 700px;    /* set desired uniform width */
+  width: 100%;         /* make it responsive */
+  margin: 1rem auto;
+  display: block;
+  border-radius: 6px;  /* optional aesthetic touch */
+}
+
