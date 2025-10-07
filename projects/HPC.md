@@ -3,7 +3,8 @@ layout: project
 type: project
 image: img/HPC/tsu.png
 title: "HPC"
-date: 2025
+start_date: 2025-04
+end_date: 2025-06
 published: true
 labels:
   - C++
@@ -31,7 +32,7 @@ The MPI version parallelized the time-step and solver routines, efficiently hand
 </p>
 
 <p align="center">
-  <img src="../img/HPC/strong.png" alt="Strong scaling results comparing experimental and theoretical speedup." style="max-width: 400px; margin: 1rem auto; display:block;">
+  <img src="../img/HPC/strong.png" alt="Strong scaling results comparing experimental and theoretical speedup." style="max-width: 650px; margin: 1rem auto; display:block;">
 </p>
 
 <p>

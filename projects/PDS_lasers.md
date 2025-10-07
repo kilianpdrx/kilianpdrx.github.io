@@ -3,7 +3,8 @@ layout: project
 type: project
 image: img/PDS_lasers/lapd.png
 title: "Semester project - optical computing"
-date: Ongoing
+start_date: 2025-06
+end_date: 2025-09
 published: true
 labels:
   - Pytorch

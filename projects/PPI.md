@@ -3,7 +3,8 @@ layout: project
 type: project
 image: img/PPI/tr102.png
 title: "Programming"
-date: 2024
+start_date: 2022-03
+end_date: 2022-06
 published: true
 labels:
   - C

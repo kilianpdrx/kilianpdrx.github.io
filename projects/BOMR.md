@@ -3,7 +3,8 @@ layout: project
 type: project
 image: img/BOMR/thymio.jpg
 title: "BOMR"
-date: 2024
+start_date: 2024-10
+end_date: 2024-12
 published: true
 labels:
   - Python

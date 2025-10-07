@@ -3,7 +3,8 @@ layout: project
 type: project
 image: img/carrie/logo_carre.png
 title: "EDF"
-date: 2024
+start_date: 2023-06
+end_date: 2023-06
 published: true
 labels:
   - Python

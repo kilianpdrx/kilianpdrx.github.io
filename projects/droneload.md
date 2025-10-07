@@ -3,7 +3,8 @@ layout: project
 type: project
 image: img/droneload/logo_droneload.png
 title: "Droneload"
-date: 2023
+start_date: 2023-02
+end_date: 2025-06
 published: true
 labels:
   - Python

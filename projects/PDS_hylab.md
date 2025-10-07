@@ -3,7 +3,8 @@ layout: project
 type: project
 image: img/PDS_hylab/logo_proj_hylab.png
 title: "Semester project - electrode optimization"
-date: Ongoing
+start_date: 2025-09
+end_date: Ongoing
 published: true
 labels:
   - Python
@@ -25,7 +26,7 @@ The methodology involves simulating a baseline resonator structure in CST to ext
 </p>
 
 <p align="center">
-  <img src="../img/PPI/prez.png" alt="Illustration of the electrode optimization process showing successive alignment of field-based surfaces and improved resonance behavior." style="max-width: 750px; margin: 1rem auto; display:block;">
+  <img src="../img/PDS_hylab/prez.png" alt="Illustration of the electrode optimization process showing successive alignment of field-based surfaces and improved resonance behavior." style="max-width: 750px; margin: 1rem auto; display:block;">
 </p>
 
 <p>

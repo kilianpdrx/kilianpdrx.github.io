@@ -3,7 +3,8 @@ layout: project
 type: project
 image: img/sncf/catenary.jpg
 title: "Catenary lifting"
-date: 2024
+start_date: 2024-02
+end_date: 2024-06
 published: true
 labels:
   - Python

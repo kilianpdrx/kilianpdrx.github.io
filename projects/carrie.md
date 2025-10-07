@@ -3,7 +3,8 @@ layout: project
 type: project
 image: img/carrie/logo_carre.png
 title: "Carrie"
-date: 2024
+start_date: 2024-09
+end_date: 2025-01
 published: true
 labels:
   - Python
