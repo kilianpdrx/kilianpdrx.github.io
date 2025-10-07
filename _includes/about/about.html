@@ -34,9 +34,10 @@
           {% endfor %}
 
           <div class="col text-center">
-            <a href="{{ '/assets/files/CV_KilianPouderoux.pdf' | relative_url }}" target="_blank" title="Open CV">
-              <i class="bi bi-file-earmark-text" style="font-size: 1.8rem;"></i>
-            </a>  
+            {% include about/social.html 
+              url='/assets/files/CV_KilianPouderoux.pdf' 
+              name='file-earmark-text' 
+              label='CV' %}
           </div>
 
         </div>
