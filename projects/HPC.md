@@ -86,17 +86,12 @@ Overall, the parallelization led to significant speedups and scalability improve
     Overall, the parallelization led to significant speedups and scalability improvements, validating the efficiency of both CPU and GPU approaches.
   </p>
 
-  
-  
-  <div class="ratio ratio-4x3 my-4 mx-auto" style="max-width: 700px;">
-  <iframe 
-    src="https://drive.google.com/file/d/17eRBybbB49KU8dngPshqUOB_8kObn6yC/preview"
-    class="project-media"
-    title="Final project"
-    allowfullscreen>
-  </iframe>
-</div>
-
-
-
+  <div class="ratio ratio-4x3 my-4 d-flex justify-content-center">
+    <iframe 
+      src="https://drive.google.com/file/d/17eRBybbB49KU8dngPshqUOB_8kObn6yC/preview"
+      class="project-media"
+      title="Final project"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
