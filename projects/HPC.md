@@ -28,11 +28,13 @@ The MPI version parallelized the time-step and solver routines, efficiently hand
 </p>
 
 <p align="center">
-  <img src="../img/HPC/weak.png" alt="Weak scaling results showing near-linear behavior with increasing tasks." style="max-width: 850px; margin: 1rem auto; display:block;">
+  <img src="../img/HPC/weak.png" alt="Weak scaling results showing near-linear behavior with increasing tasks." style="max-width: 1000px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Weak scaling results showing near-linear behavior with increasing tasks.</span>
 </p>
 
 <p align="center">
   <img src="../img/HPC/strong.png" alt="Strong scaling results comparing experimental and theoretical speedup." style="max-width: 680px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Strong scaling results comparing experimental and theoretical speedup.</span>
 </p>
 
 <p>
@@ -41,6 +43,7 @@ The CUDA version introduced several optimized kernels for the solver, exploring 
 
 <p align="center">
   <img src="../img/HPC/perblock.png" alt="CUDA performance analysis showing time per iteration for different block and grid configurations." style="max-width: 680px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">CUDA performance analysis showing time per iteration for different block and grid configurations.</span>
 </p>
 
 <p>
@@ -54,4 +57,21 @@ Overall, the parallelization led to significant speedups and scalability improve
     allowfullscreen>
   </iframe>
 </div>
+
+
+
+
+<figure style="max-width: 700px; margin: 0 auto; text-align: center;">
+  <div class="ratio ratio-4x3">
+    <iframe 
+      src="https://drive.google.com/file/d/17eRBybbB49KU8dngPshqUOB_8kObn6yC/preview"
+      title="Final project"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <figcaption style="font-size: 0.9rem; color: gray; margin-top: 0.5rem;">
+    Visualization of the water movement throughout the simulation.
+  </figcaption>
+</figure>
+
 </div>
