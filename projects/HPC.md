@@ -28,11 +28,11 @@ The MPI version parallelized the time-step and solver routines, efficiently hand
 </p>
 
 <p align="center">
-  <img src="../img/HPC/weak.png" alt="Weak scaling results showing near-linear behavior with increasing tasks." style="max-width: 750px; margin: 1rem auto; display:block;">
+  <img src="../img/HPC/weak.png" alt="Weak scaling results showing near-linear behavior with increasing tasks." style="max-width: 850px; margin: 1rem auto; display:block;">
 </p>
 
 <p align="center">
-  <img src="../img/HPC/strong.png" alt="Strong scaling results comparing experimental and theoretical speedup." style="max-width: 650px; margin: 1rem auto; display:block;">
+  <img src="../img/HPC/strong.png" alt="Strong scaling results comparing experimental and theoretical speedup." style="max-width: 680px; margin: 1rem auto; display:block;">
 </p>
 
 <p>
