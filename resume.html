@@ -12,12 +12,32 @@ layout: home
       </div>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="col">
         {% capture url %}{{ site.data.bio.basics.website }}{% endcapture %}
         {% capture label %}{{ site.data.bio.basics.website | remove: "http://" | remove: "https://" }}{% endcapture %}
         <p class="mb-1">{% include about/social.html url=url name='house' label=label %} </p>
 
+        {% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}
+        {% capture label %}{{ site.data.bio.basics.email }}{% endcapture %}
+        <p class="mb-1">{% include about/social.html url=url name='envelope' label=label %}</p>
+
+        {% for profile in site.data.bio.basics.profiles %}
+          {% capture url %}{{ profile.url }}{% endcapture %}
+          {% capture name %}{{ profile.network | downcase }}{% endcapture %}
+          {% capture label %}{{ profile.username }}{% endcapture %}
+          <p class="mb-1">{% include about/social.html url=url name=name label=label %}</p>
+        {% endfor %}
+      </div>
+      <div class="col">
+        <p class="mb-1 text-end">{{ site.data.bio.basics.location.address }}</p>
+        <p class="mb-1 text-end">{{ site.data.bio.basics.location.city }}, {{ site.data.bio.basics.location.region }} {{ site.data.bio.basics.location.postalCode }} {{ site.data.bio.basics.location.countryCode }}</p>
+        <p class="mb-1 text-end">{{ site.data.bio.basics.phone }}</p>
+      </div>
+    </div> -->
+
+    <div class="row">
+      <div class="col">
         {% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}
         {% capture label %}{{ site.data.bio.basics.email }}{% endcapture %}
         <p class="mb-1">{% include about/social.html url=url name='envelope' label=label %}</p>
@@ -111,62 +131,51 @@ layout: home
     </div>
     {% endif %} -->
 
+
+
     {% if site.data.bio.education %}
       <div class="row pt-4 align-items-start">
         <div class="col-lg-3">
           <h1 class="display-6 text-start m-0">Education</h1>
         </div>
         <div class="col-lg-9">
-
-          {% assign grouped_edu = site.data.bio.education | group_by: "institution" %}
-          {% for group in grouped_edu %}
-            <div class="mb-4">
-              <div class="row mb-1">
-                <div class="col-9">
-                  <p class="fs-5 mb-1"><b>{{ group.name }}</b></p>
-                </div>
-                <div class="col-3 text-end">
-                  {% assign first = group.items | sort: "endDate" | last %}
-                  {% assign last = group.items | sort: "startDate" | first %}
-                  {% if first.startDate or first.endDate %}
-                    <p class="text-muted m-0">
-                      {% if last.startDate %}
-                        {{ last.startDate | date: "%b %Y" }}
-                      {% endif %}
-                      {% if last.startDate and first.endDate %}
-                        –
-                      {% endif %}
-                      {% if first.endDate %}
-                        {% if first.endDate != "Present" %}
-                          {{ first.endDate | date: "%b %Y" }}
-                        {% else %}
-                          {{ first.endDate }}
-                        {% endif %}
-                      {% endif %}
-                    </p>
-                  {% endif %}
-                </div>
+          {% for entry in site.data.bio.education %}
+            <div class="row mb-3">
+              <div class="col-9">
+                <p class="fs-5 mb-1"><b>{{ entry.institution }}</b></p>
+                <p class="mb-0">
+                  <b>{{ entry.studyType }}</b>{% if entry.area %}, {{ entry.area }}{% endif %}
+                </p>
+                {% if entry.summary %}
+                  <p class="mb-1 text-muted">{{ entry.summary }}</p>
+                {% endif %}
+                {% if entry.courses %}
+                  <ul class="mb-1">
+                    {% for course in entry.courses %}
+                      <li>{{ course }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
               </div>
-
-              {% assign entries = group.items | sort: "startDate" | reverse %}
-              {% for entry in entries %}
-                <div class="ms-3 mb-2">
-                  <p class="mb-0"><b>{{ entry.studyType }}</b>{% if entry.area %}, {{ entry.area }}{% endif %}</p>
-                  {% if entry.summary %}
-                    <p class="mb-1 text-muted">{{ entry.summary }}</p>
+              <div class="col-3 text-end">
+                <p class="text-muted m-0">
+                  {% if entry.startDate %}
+                    {{ entry.startDate | date: "%b %Y" }}
                   {% endif %}
-                  {% if entry.courses %}
-                    <ul class="mb-1">
-                      {% for course in entry.courses %}
-                        <li>{{ course }}</li>
-                      {% endfor %}
-                    </ul>
+                  {% if entry.startDate and entry.endDate %}
+                    –
                   {% endif %}
-                </div>
-              {% endfor %}
+                  {% if entry.endDate %}
+                    {% if entry.endDate != "Present" %}
+                      {{ entry.endDate | date: "%b %Y" }}
+                    {% else %}
+                      {{ entry.endDate }}
+                    {% endif %}
+                  {% endif %}
+                </p>
+              </div>
             </div>
           {% endfor %}
-
         </div>
       </div>
     {% endif %}
@@ -220,56 +229,46 @@ layout: home
           <h1 class="display-6 text-start m-0">Work Experience</h1>
         </div>
         <div class="col-lg-9">
-
           {% assign grouped_work = site.data.bio.work | group_by: "company" %}
           {% for group in grouped_work %}
             <div class="mb-4">
-              <div class="row mb-1">
-                <div class="col-9">
-                  <p class="fs-5 mb-1"><b>{{ group.name }}</b></p>
-                </div>
-                <div class="col-3 text-end">
-                  {% assign first = group.items | sort: "endDate" | last %}
-                  {% assign last = group.items | sort: "startDate" | first %}
-                  {% if first.startDate or first.endDate %}
+              <p class="fs-5 mb-1"><b>{{ group.name }}</b></p>
+              {% for entry in group.items %}
+                <div class="row ms-1 mb-2">
+                  <div class="col-9">
+                    <p class="mb-0"><b>{{ entry.position }}</b></p>
+                    {% if entry.summary %}
+                      <p class="mb-0 text-muted">{{ entry.summary }}</p>
+                    {% endif %}
+                    {% if entry.highlights %}
+                      <ul class="mb-1">
+                        {% for highlight in entry.highlights %}
+                          <li>{{ highlight }}</li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </div>
+                  <div class="col-3 text-end">
                     <p class="text-muted m-0">
-                      {% if last.startDate %}
-                        {{ last.startDate | date: "%b %Y" }}
+                      {% if entry.startDate %}
+                        {{ entry.startDate | date: "%b %Y" }}
                       {% endif %}
-                      {% if last.startDate and first.endDate %}
+                      {% if entry.startDate and entry.endDate %}
                         –
                       {% endif %}
-                      {% if first.endDate %}
-                        {% if first.endDate != "Present" %}
-                          {{ first.endDate | date: "%b %Y" }}
+                      {% if entry.endDate %}
+                        {% if entry.endDate != "Present" %}
+                          {{ entry.endDate | date: "%b %Y" }}
                         {% else %}
-                          {{ first.endDate }}
+                          {{ entry.endDate }}
                         {% endif %}
                       {% endif %}
                     </p>
-                  {% endif %}
-                </div>
-              </div>
-
-              {% assign entries = group.items | sort: "startDate" | reverse %}
-              {% for entry in entries %}
-                <div class="ms-3 mb-2">
-                  <p class="mb-0"><b>{{ entry.position }}</b></p>
-                  {% if entry.summary %}
-                    <p class="mb-0 text-muted">{{ entry.summary }}</p>
-                  {% endif %}
-                  {% if entry.highlights %}
-                    <ul class="mb-1">
-                      {% for highlight in entry.highlights %}
-                        <li>{{ highlight }}</li>
-                      {% endfor %}
-                    </ul>
-                  {% endif %}
+                  </div>
                 </div>
               {% endfor %}
             </div>
           {% endfor %}
-
         </div>
       </div>
     {% endif %}
@@ -323,62 +322,53 @@ layout: home
           <h1 class="display-6 text-start m-0">Associative Experience</h1>
         </div>
         <div class="col-lg-9">
-
           {% assign volunteer_groups = site.data.bio.volunteer | group_by: "company" %}
           {% for group in volunteer_groups %}
             <div class="mb-4">
-              <div class="row mb-1">
-                <div class="col-9">
-                  <p class="fs-5 mb-1"><b>{{ group.name }}</b></p>
-                  {% assign first = group.items[0] %}
-                  {% if first.website %}
-                    <p class="mb-1">
-                      <a href="{{ first.website }}">{{ first.website | remove: "http://" | remove: "https://" }}</a>
-                    </p>
-                  {% endif %}
-                  {% if first.summary %}
-                    <p class="mb-2 text-muted">{{ first.summary }}</p>
-                  {% endif %}
-                </div>
-                <div class="col-3 text-end">
-                  {% assign first = group.items | sort: "endDate" | last %}
-                  {% assign last = group.items | sort: "startDate" | first %}
-                  {% if first.startDate or first.endDate %}
+              <p class="fs-5 mb-1"><b>{{ group.name }}</b></p>
+              {% assign first = group.items[0] %}
+              {% if first.website %}
+                <p class="mb-1">
+                  <a href="{{ first.website }}">{{ first.website | remove: "http://" | remove: "https://" }}</a>
+                </p>
+              {% endif %}
+              {% if first.summary %}
+                <p class="mb-2 text-muted">{{ first.summary }}</p>
+              {% endif %}
+
+              {% for entry in group.items %}
+                <div class="row ms-1 mb-2">
+                  <div class="col-9">
+                    <p class="mb-0"><b>{{ entry.position }}</b></p>
+                    {% if entry.highlights %}
+                      <ul class="mb-1">
+                        {% for h in entry.highlights %}
+                          <li>{{ h }}</li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </div>
+                  <div class="col-3 text-end">
                     <p class="text-muted m-0">
-                      {% if last.startDate %}
-                        {{ last.startDate | date: "%b %Y" }}
+                      {% if entry.startDate %}
+                        {{ entry.startDate | date: "%b %Y" }}
                       {% endif %}
-                      {% if last.startDate and first.endDate %}
+                      {% if entry.startDate and entry.endDate %}
                         –
                       {% endif %}
-                      {% if first.endDate %}
-                        {% if first.endDate != "Present" %}
-                          {{ first.endDate | date: "%b %Y" }}
+                      {% if entry.endDate %}
+                        {% if entry.endDate != "Present" %}
+                          {{ entry.endDate | date: "%b %Y" }}
                         {% else %}
-                          {{ first.endDate }}
+                          {{ entry.endDate }}
                         {% endif %}
                       {% endif %}
                     </p>
-                  {% endif %}
-                </div>
-              </div>
-
-              {% assign entries = group.items | sort: "startDate" | reverse %}
-              {% for entry in entries %}
-                <div class="ms-3 mb-2">
-                  <p class="mb-0"><b>{{ entry.position }}</b></p>
-                  {% if entry.highlights %}
-                    <ul class="mb-1">
-                      {% for h in entry.highlights %}
-                        <li>{{ h }}</li>
-                      {% endfor %}
-                    </ul>
-                  {% endif %}
+                  </div>
                 </div>
               {% endfor %}
             </div>
           {% endfor %}
-
         </div>
       </div>
     {% endif %}
