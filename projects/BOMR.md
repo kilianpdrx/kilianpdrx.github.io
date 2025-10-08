@@ -30,7 +30,7 @@ The system also included shape and contour processing to robustly extract enviro
 </p>
 
 <p align="center">
-  <img src="../img/BOMR/convex_hull.png" alt="Convex hull detection and contour extraction of obstacles using OpenCV." style="max-width: 700px; margin: 1rem auto; display:block;">
+  <img src="../img/BOMR/convex_hull.png" alt="Convex hull detection and contour extraction of obstacles using OpenCV." style="max-width: 500px; margin: 1rem auto; display:block;">
 </p>
 
 <p>
@@ -73,7 +73,7 @@ Overall, the project combined elements of perception, decision-making, and contr
 The final system demonstrated reliable mapping, accurate target recognition, and smooth trajectory following in real-world conditions.
 </p>
 
-<div class="ratio ratio-4x3 my-4" style="max-width: 600px; margin: 0 auto;">
+<div class="ratio ratio-4x3 my-4" style="max-width: 800px; margin: 0 auto;">
   <iframe 
     src="https://drive.google.com/file/d/1wTRObgNCnMcC-vWDzunhK5DmzSavFFN7/preview"
     title="Final project demonstration"

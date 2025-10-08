@@ -28,7 +28,7 @@ The MPI version parallelized the time-step and solver routines, efficiently hand
 </p>
 
 <p align="center">
-  <img src="../img/HPC/weak.png" alt="Weak scaling results showing near-linear behavior with increasing tasks." style="max-width: 700px; margin: 1rem auto; display:block;">
+  <img src="../img/HPC/weak.png" alt="Weak scaling results showing near-linear behavior with increasing tasks." style="max-width: 750px; margin: 1rem auto; display:block;">
 </p>
 
 <p align="center">
@@ -40,7 +40,7 @@ The CUDA version introduced several optimized kernels for the solver, exploring 
 </p>
 
 <p align="center">
-  <img src="../img/HPC/perblock.png" alt="CUDA performance analysis showing time per iteration for different block and grid configurations." style="max-width: 700px; margin: 1rem auto; display:block;">
+  <img src="../img/HPC/perblock.png" alt="CUDA performance analysis showing time per iteration for different block and grid configurations." style="max-width: 680px; margin: 1rem auto; display:block;">
 </p>
 
 <p>

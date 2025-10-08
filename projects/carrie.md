@@ -27,7 +27,7 @@ The prototype successfully demonstrated reliable user tracking and smooth naviga
 </p>
 
 <p align="center">
-  <img src="../img/carrie/robot.png" alt="Final CarriE prototype" style="max-width: 800px; margin: 1rem auto; display:block;">
+  <img src="../img/carrie/robot.jpg" alt="Final CarriE prototype" style="max-width: 800px; margin: 1rem auto; display:block;">
 </p>
 
 <p>
@@ -37,7 +37,7 @@ The onboard system integrates a Raspberry Pi 5, an Arduino Uno, and several sens
 </p>
 
 <p align="center">
-  <img src="../img/carrie/WIRING.jpeg" alt="Wiring diagram of the CarriE robot system" style="max-width: 800px; margin: 1rem auto; display:block;">
+  <img src="../img/carrie/WIRING.png" alt="Wiring diagram of the CarriE robot system" style="max-width: 800px; margin: 1rem auto; display:block;">
 </p>
 
 <p>
