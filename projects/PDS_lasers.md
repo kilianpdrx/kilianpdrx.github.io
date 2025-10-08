@@ -53,7 +53,7 @@ On the software side, a full AI pipeline was implemented:
 </ul>
 
 <p align="center">
-  <img src="../img/PDS_lasers/small_feat.png" alt="Example input SLM mask showing small feature patterns used for training." style="max-width: 600px; margin: 1rem auto; display:block;">
+  <img src="../img/PDS_lasers/small_feat.png" alt="Example input SLM mask showing small feature patterns used for training." style="max-width: 400px; margin: 1rem auto; display:block;">
 </p>
 
 <p>

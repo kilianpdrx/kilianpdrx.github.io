@@ -133,15 +133,20 @@
       "website": "",
       "startDate": "2023-07-01",
       "endDate": "2023-08-15",
-      "summary": "",
-      "highlights": []
+      "summary": "Discover the operating environment in a company specializing in vacuum technologies.",
+      "highlights": [
+        "Preparation of orders for the shipping and production departments",
+        "Inventory and handling of delivery errors"
+      ]
     },
+
+    
     {
       "company": "École Polytechnique Fédérale de Lausanne, EPFL",
       "position": "Teaching Assistant",
       "website": "",
       "startDate": "2021-01-01",
-      "endDate": "2026-01-01",
+      "endDate": "Present",
       "summary": "",
       "highlights": [
         "Materials : from chemistry to properties",
@@ -157,7 +162,7 @@
       "position": "Pole Leader - Ground Segment",
       "website": "https://www.epflspacecraftteam.ch",
       "startDate": "2025-08-01",
-      "endDate": "",
+      "endDate": "Present",
       "summary": "Student association focused on the design, development, and launch of innovative satellite and space related projects.",
       "highlights": [
         "Lead a team of 8 to develop and operate ground stations for satellite communications.",
@@ -182,7 +187,7 @@
       "position": "Vice President - Logistics & Finance",
       "website": "https://usclausanne.ch",
       "startDate": "2025-08-01",
-      "endDate": "",
+      "endDate": "Present",
       "summary": "Student surf association at EPFL & UNIL organizing water sports and community events.",
       "highlights": [
         "Oversee the association's budget, ensuring financial health and sustainability.",
