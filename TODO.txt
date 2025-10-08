@@ -7,10 +7,10 @@
 
 
 PROJECTS
-HYLAB --> 
+HYLAB --> OK
 LAPD --> 
 HPC --> 
-BOMR --> 
+BOMR --> OK
 CARRIE --> 
 CATENARY LIFTING --> 
 REACTIVE MEDIA --> 

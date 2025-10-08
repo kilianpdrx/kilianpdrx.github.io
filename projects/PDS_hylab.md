@@ -27,7 +27,8 @@ The methodology involves simulating a baseline resonator structure in CST to ext
 </p>
 
 <p align="center">
-  <img src="../img/PDS_hylab/prez.png" alt="Illustration of the electrode optimization process showing successive alignment of field-based surfaces and improved resonance behavior." style="max-width: 750px; margin: 1rem auto; display:block;">
+  <img src="../img/PDS_hylab/prez.png" alt="Illustration of the electrode optimization process showing successive alignment of field-based surfaces and improved resonance behavior." style="max-width: 900px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Illustration of the electrode optimization process showing successive alignment of field-based surfaces and improved resonance behavior.</span>
 </p>
 
 <p>
