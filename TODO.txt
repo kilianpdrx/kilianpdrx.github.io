@@ -1,4 +1,5 @@
 - verifier contenu de chaque projet
+- vérifier mots d'intro qui apparaissent sur la carte
 - vérifier les mots clés de chaque projet --> OK
 - rajouter les légendes de chacune des photos (regarder fin4 de milieux réactifs)
 - adapter la taille des images
@@ -9,15 +10,17 @@
 PROJECTS
 HYLAB --> OK
 LAPD --> OK
-HPC --> 
+HPC --> OK
 BOMR --> OK
-CARRIE --> 
 CATENARY LIFTING --> OK
+PROGRAMMING --> OK
+CARRIE --> 
 REACTIVE MEDIA --> 
+    - remove title from the images and put it in caption english
 EDF --> 
 DRONELOAD --> 
-PROGRAMMING --> OK
 OCTORANGE --> 
+
 
 Add ? 
 CODING WEEKS

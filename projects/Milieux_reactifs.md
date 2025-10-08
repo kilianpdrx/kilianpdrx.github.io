@@ -22,7 +22,7 @@ period: CentraleSupélec
 <p>
 This project was carried out as part of the Reactive Media course at EPFL and focused on modeling plasma-assisted ignition in a hydrogen-air gas turbine. 
 The objective was to study the influence of plasma discharges on ignition delay, gas temperature, and combustion stability. 
-The work combined thermochemical modeling and simulation in a Perfectly Stirred Reactor (PSR) configuration using Cantera.
+The work combined thermochemical modeling and simulation in a Perfectly Stirred Reactor (PSR) configuration.
 </p>
 
 <p>
