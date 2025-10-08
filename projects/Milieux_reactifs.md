@@ -57,8 +57,10 @@ For each configuration, the species mass fractions and temperature profiles were
 The plasma-assisted case achieved full ignition at gas velocities up to 4.3 m/s, while the non-assisted case was limited to 0.065 m/s, confirming a sixtyfold improvement in the combustion speed.
 </p>
 
+
 <p align="center">
-  <img src="../img/Milieux_reactifs/fin4.png" alt="Evolution of mass fractions and temperature in the plasma-assisted case" style="max-width: 900px; margin: 1rem auto; display:block;">
+  <img src="../img/Milieux_reactifs/fin4.png" alt="Evolution of mass fractions and temperature" style="max-width: 900px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Evolution of mass fractions and temperature during plasma-assisted combustion.</span>
 </p>
 
 <p>

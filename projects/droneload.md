@@ -22,7 +22,7 @@ The goal was to design and program a system capable of performing these tasks bo
 </p>
 
 <p align="center">
-  <img src="../img/droneload/droneload.jpeg" alt="DroneLoad quadcopter and control setup" style="max-width: 800px; margin: 1rem auto; display:block;">
+  <img src="../img/droneload/droneload.jpg" alt="DroneLoad quadcopter and control setup" style="max-width: 800px; margin: 1rem auto; display:block;">
 </p>
 
 <p>

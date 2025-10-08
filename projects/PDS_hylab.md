@@ -18,7 +18,7 @@ period: EPFL Master
 
 <div class="container py-3">
 <p>
-This project focuses on optimizing the geometry of electrodes in photonic and electromagnetic resonator structures in order to maximize the quality factor (Q) of the resonator. The idea is to analyze the field distributions obtained from CST simulations — such as the Poynting vector and the electric field — and determine the surfaces that are tangential to these fields, causing minimal field disturbance. Aligning the electrodes with these tangential surfaces helps reduce energy loss and improve resonance performance.
+This project focuses on optimizing the geometry of electrodes in photonic and electromagnetic resonator structures in order to maximize the quality factor (Q) of the resonator. The idea is to analyze the field distributions obtained from CST simulations and determine the surfaces that are tangential to these fields, causing minimal field disturbance. Aligning the electrodes with these tangential surfaces helps reduce energy loss and improve resonance performance.
 </p>
 
 <p>
