@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/Milieux_reactifs/thymio.jpg
+image: img/Milieux_reactifs/fin4.png
 title: "Reactive Media"
 start_date: 2023-11
 end_date: 2024-02
@@ -49,7 +49,7 @@ Subsequent analyses focused on the evolution of gas temperature over time for va
 </p>
 
 <p align="center">
-  <img src="../img/Milieux_reactifs/5000s vitesse_raccourci.jpeg" alt="Temperature evolution for different gas velocities" style="max-width: 850px; margin: 1rem auto; display:block;">
+  <img src="../img/Milieux_reactifs/5000s_vitesse_raccourci.png" alt="Temperature evolution for different gas velocities" style="max-width: 850px; margin: 1rem auto; display:block;">
 </p>
 
 <p>

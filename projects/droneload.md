@@ -22,7 +22,7 @@ The goal was to design and program a system capable of performing these tasks bo
 </p>
 
 <p align="center">
-  <img src="../img/drone/droneload.jpeg" alt="DroneLoad quadcopter and control setup" style="max-width: 800px; margin: 1rem auto; display:block;">
+  <img src="../img/droneload/droneload.jpeg" alt="DroneLoad quadcopter and control setup" style="max-width: 800px; margin: 1rem auto; display:block;">
 </p>
 
 <p>
@@ -32,7 +32,7 @@ This configuration provided a modular and robust platform for testing autonomous
 </p>
 
 <p align="center">
-  <img src="../img/drone/parcours.png" alt="DroneLoad competition course with obstacles and delivery zones" style="max-width: 900px; margin: 1rem auto; display:block;">
+  <img src="../img/droneload/parcours.png" alt="DroneLoad competition course with obstacles and delivery zones" style="max-width: 900px; margin: 1rem auto; display:block;">
 </p>
 
 <p>
@@ -43,7 +43,7 @@ A polynomial-based path planning algorithm was developed to compute smooth traje
 </p>
 
 <p align="center">
-  <img src="../img/drone/good_path.png" alt="Simulated trajectory for window traversal in 3D space" style="max-width: 700px; margin: 1rem auto; display:block;">
+  <img src="../img/droneload/good_path.png" alt="Simulated trajectory for window traversal in 3D space" style="max-width: 700px; margin: 1rem auto; display:block;">
 </p>
 
 <p>

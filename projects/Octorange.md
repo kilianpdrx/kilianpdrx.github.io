@@ -23,7 +23,7 @@ The goal was to create a functional, manufacturable, and easy-to-assemble system
 </p>
 
 <p align="center">
-  <img src="../img/octorange/octorange.jpg" alt="Complete CAD model of the mechanical juicer" style="max-width: 800px; margin: 1rem auto; display:block;">
+  <img src="../img/Octorange/octorange.jpg" alt="Complete CAD model of the mechanical juicer" style="max-width: 800px; margin: 1rem auto; display:block;">
 </p>
 
 <p>
@@ -33,7 +33,7 @@ The design also includes a feeding rail system that automatically delivers the o
 </p>
 
 <p align="center">
-  <img src="../img/octorange/zoom.jpg" alt="Detailed view of the pressing mechanism" style="max-width: 800px; margin: 1rem auto; display:block;">
+  <img src="../img/Octorange/zoom.jpg" alt="Detailed view of the pressing mechanism" style="max-width: 800px; margin: 1rem auto; display:block;">
 </p>
 
 <p>
