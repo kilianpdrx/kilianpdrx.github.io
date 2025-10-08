@@ -7,8 +7,10 @@ start_date: 2023-02
 end_date: 2025-06
 published: true
 labels:
+  - Embedded systems
+  - Robotics
+  - Computer vision
   - Python
-  - Prototyping
 summary: "Autonomous drone"
 period: CentraleSupélec
 ---

@@ -10,6 +10,8 @@ labels:
   - Python
   - Data science
   - Statistics
+  - Monte Carlo simulations
+  - Machine Learning
 summary: "Data analysis and development of prediction models for catenary litfing"
 period: CentraleSupélec
 ---

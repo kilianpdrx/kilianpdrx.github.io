@@ -7,11 +7,11 @@ start_date: 2023-06
 end_date: 2023-06
 published: true
 labels:
+  - Data science
   - Python
-  - Thymio robot
-  - Computer Vision
-  - SLAM
-  - OpenCV
+  - Machine Learning
+  - Times series
+
 summary: "Robot control and SLAM in a dynamic environment"
 period: CentraleSupélec
 ---

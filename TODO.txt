@@ -1,0 +1,30 @@
+- verifier contenu de chaque projet
+- vérifier les mots clés de chaque projet --> OK
+- rajouter les légendes de chacune des photos (regarder fin4 de milieux réactifs)
+- adapter la taille des images
+- section sport/activités personnelles ?
+- changer favicon.ico
+
+
+PROJECTS
+HYLAB --> 
+LAPD --> 
+HPC --> 
+BOMR --> 
+CARRIE --> 
+CATENARY LIFTING --> 
+REACTIVE MEDIA --> 
+EDF --> 
+DRONELOAD
+PROGRAMMING
+OCTORANGE
+
+Add ? 
+CODING WEEKS
+CSD
+STOCHA SIM
+START UP WEEK
+ROBOT MEDICAL
+
+
+

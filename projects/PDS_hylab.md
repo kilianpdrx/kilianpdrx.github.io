@@ -9,6 +9,7 @@ published: true
 labels:
   - Python
   - CST
+  - Optimization
   - Numerical analysis
   - Electromagnetics
 summary: "Field-based electrode optimization to enhance resonator Q-factor."

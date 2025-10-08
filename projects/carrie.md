@@ -9,8 +9,11 @@ published: true
 labels:
   - Python
   - Raspberry Pi
+  - Arduino
   - Computer Vision
-  - Person Re-Indentification
+  - Embedded systems
+  - Machine Learning
+  - Robotics
 summary: "An autonomous robot for carrying charges"
 period: EPFL Master
 ---

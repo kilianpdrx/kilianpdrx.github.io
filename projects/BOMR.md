@@ -12,6 +12,7 @@ labels:
   - Computer Vision
   - SLAM
   - OpenCV
+  - Mobile robotics
 summary: "Robot control and SLAM in a dynamic environment"
 period: EPFL Master
 ---
@@ -20,17 +21,18 @@ period: EPFL Master
 
 <p>
 As part of the Basics of Mobile Robotics course at EPFL, our team designed and implemented an autonomous navigation system for the Thymio robot, integrating computer vision, motion control, and mapping techniques. 
-The robot was tasked with exploring an unknown environment, identifying red-colored targets, retrieving objects, and returning to its initial position while avoiding static and dynamic obstacles.
+The robot was tasked with exploring an unknown environment, identifying red-colored targets, retrieving objects, and returning to its initial position while avoiding static and dynamic obstacles. The robot was designed to maintain autonomous navigation even when its main camera temporarily loses visibility, relying on odometry and Kalman filter sensor fusion to estimate its position until visual data becomes available again. It was also made robust to a “kidnapping” scenario, where it could be suddenly displaced and still recover its localization and continue operating autonomously.
 </p>
 
 <p>
-I was primarily responsible for developing the computer vision pipeline, which allowed the robot to perceive and interpret its surroundings in real time. 
+I was primarily responsible for developing the computer vision pipeline, which allowed the robot to perceive and interpret its surroundings in real time through an external camera.
 Using OpenCV, I implemented a color-based detection system to locate red targets and distinguish obstacles and free space from the camera feed. 
 The system also included shape and contour processing to robustly extract environmental features and feed them into the robot’s mapping and navigation modules.
 </p>
 
 <p align="center">
   <img src="../img/BOMR/convex_hull.png" alt="Convex hull detection and contour extraction of obstacles using OpenCV." style="max-width: 500px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Convex hull detection and contour extraction of obstacles using OpenCV.</span>
 </p>
 
 <p>
@@ -40,6 +42,7 @@ These markers provided a reliable reference frame, enabling perspective correcti
 
 <p align="center">
   <img src="../img/BOMR/map_exemple.jpeg" alt="Experimental setup with calibration markers, targets, and obstacles." style="max-width: 700px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">The robot's environment, with calibration markers, targets, and obstacles.</span>
 </p>
 
 <p>
@@ -50,6 +53,7 @@ This process ensured that the navigation system could focus on relevant parts of
 
 <p align="center">
   <img src="../img/BOMR/cropped_process.png" alt="Illustration of the camera calibration and region of interest extraction." style="max-width: 700px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Camera calibration and extraction of the region of interest.</span>
 </p>
 
 <p>
@@ -60,6 +64,7 @@ The following image shows an example of the mask extraction and contour detectio
 
 <p align="center">
   <img src="../img/BOMR/calibration_yellow.png" alt="Color mask and contour extraction used for robot orientation detection." style="max-width: 700px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Color mask and contour extraction used for robot orientation detection.</span>
 </p>
 
 <p>
@@ -79,6 +84,7 @@ The final system demonstrated reliable mapping, accurate target recognition, and
     title="Final project demonstration"
     allowfullscreen>
   </iframe>
+  <span style="font-size: 0.9rem; color: gray;">Visualization of the robot's movement across the map. Left side is the annotated camera's view, right side is the robot's real life evolution.</span>
 </div>
 
 </div>

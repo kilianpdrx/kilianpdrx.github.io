@@ -7,11 +7,9 @@ start_date: 2021-02
 end_date: 2021-06
 published: true
 labels:
-  - Python
-  - Thymio robot
-  - Computer Vision
-  - SLAM
-  - OpenCV
+  - Catia
+  - 3D modelisation
+  - Mechanical design
 summary: "Robot control and SLAM in a dynamic environment"
 period: EPFL Bachelor
 ---

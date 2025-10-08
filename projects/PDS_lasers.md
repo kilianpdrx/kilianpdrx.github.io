@@ -13,7 +13,9 @@ labels:
   - SLURM
   - Python
   - Diffusion models
+  - Variational Auto Encoders
   - AI
+  - Machine Learning
 summary: "SLM mask design with diffusion models for optical computing"
 period: EPFL Master
 ---
