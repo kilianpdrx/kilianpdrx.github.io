@@ -78,13 +78,18 @@ Overall, the project combined elements of perception, decision-making, and contr
 The final system demonstrated reliable mapping, accurate target recognition, and smooth trajectory following in real-world conditions.
 </p>
 
-<div class="ratio ratio-4x3 my-4" style="max-width: 800px; margin: 0 auto;">
-  <iframe 
-    src="https://drive.google.com/file/d/1wTRObgNCnMcC-vWDzunhK5DmzSavFFN7/preview"
-    title="Final project demonstration"
-    allowfullscreen>
-  </iframe>
-  <span style="font-size: 0.9rem; color: gray;">Visualization of the robot's movement across the map. Left side is the annotated camera's view, right side is the robot's real life evolution.</span>
-</div>
+
+<figure style="max-width: 800px; margin: 0 auto; text-align: center;">
+  <div class="ratio ratio-4x3">
+    <iframe 
+      src="https://drive.google.com/file/d/1wTRObgNCnMcC-vWDzunhK5DmzSavFFN7/preview"
+      title="Final project demonstration"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <figcaption style="font-size: 0.9rem; color: gray; margin-top: 0.5rem;">
+    Visualization of the robot's movement across the map. Left side is the annotated camera's view, right side is the robot's real life evolution.
+  </figcaption>
+</figure>
 
 </div>
