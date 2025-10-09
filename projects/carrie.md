@@ -31,6 +31,7 @@ The prototype successfully demonstrated reliable user tracking and smooth naviga
 
 <p align="center">
   <img src="../img/carrie/robot.jpg" alt="Final CarriE prototype" style="max-width: 800px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Final CarriE prototype.</span>
 </p>
 
 <p>
@@ -41,6 +42,7 @@ The onboard system integrates a Raspberry Pi 5, an Arduino Uno, and several sens
 
 <p align="center">
   <img src="../img/carrie/WIRING.png" alt="Wiring diagram of the CarriE robot system" style="max-width: 800px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Wiring diagram of the CarriE robot system.</span>
 </p>
 
 <p>
@@ -50,6 +52,7 @@ The early prototype shown below was used to pitch the project, test the code, an
 
 <p align="center">
   <img src="../img/carrie/first.png" alt="Early prototype used for control testing" style="max-width: 700px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Early prototype used for control testing.</span>
 </p>
 
 <p>
@@ -61,6 +64,7 @@ The Raspberry Pi interprets this information and sends commands to the Arduino t
 
 <p align="center">
   <img src="../img/carrie/comm.png" alt="Communication architecture between camera, Raspberry Pi, and computer" style="max-width: 650px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Communication architecture between camera, Raspberry Pi, and computer.</span>
 </p>
 
 <p>

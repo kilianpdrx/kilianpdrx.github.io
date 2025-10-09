@@ -31,7 +31,7 @@ The ignition temperature, or Tspark, was found iteratively, and the operating co
 </p>
 
 <p align="center">
-  <img src="../img/Milieux_reactifs/check_phi.png" alt="Temperature at steady state as a function of equivalence ratio" style="max-width: 750px; margin: 1rem auto; display:block;">
+  <img src="../img/Milieux_reactifs/check_phi.png" alt="Temperature at steady state as a function of equivalence ratio" style="max-width: 600px; margin: 1rem auto; display:block;">
   <span style="font-size: 0.9rem; color: gray;">Temperature at steady state as a function of equivalence ratio.</span>
 </p>
 
@@ -52,7 +52,7 @@ Subsequent analyses focused on the evolution of gas temperature over time for va
 </p>
 
 <p align="center">
-  <img src="../img/Milieux_reactifs/5000s_vitesse_raccourci.png" alt="Temperature evolution for different gas velocities" style="max-width: 850px; margin: 1rem auto; display:block;">
+  <img src="../img/Milieux_reactifs/5000s_vitesse_raccourci.png" alt="Temperature evolution for different gas velocities" style="max-width: 800px; margin: 1rem auto; display:block;">
   <span style="font-size: 0.9rem; color: gray;">Temperature evolution for different gas velocities.</span>
 </p>
 
@@ -63,7 +63,7 @@ The plasma-assisted case achieved full ignition at gas velocities up to 4.3 m/s,
 
 
 <p align="center">
-  <img src="../img/Milieux_reactifs/fin4.png" alt="Evolution of mass fractions and temperature" style="max-width: 900px; margin: 1rem auto; display:block;">
+  <img src="../img/Milieux_reactifs/fin4.png" alt="Evolution of mass fractions and temperature" style="max-width: 750px; margin: 1rem auto; display:block;">
   <span style="font-size: 0.9rem; color: gray;">Evolution of mass fractions and temperature during plasma-assisted combustion.</span>
 </p>
 

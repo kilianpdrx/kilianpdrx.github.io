@@ -11,7 +11,7 @@ labels:
   - Robotics
   - Computer vision
   - Python
-summary: "Autonomous drone"
+summary: "Development of an autonomous quadcopter for object detection, navigation, and delivery tasks."
 period: CentraleSupélec
 ---
 
