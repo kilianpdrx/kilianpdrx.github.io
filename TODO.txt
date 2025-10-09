@@ -1,8 +1,3 @@
-- verifier contenu de chaque projet
-- vérifier mots d'intro qui apparaissent sur la carte
-- vérifier les mots clés de chaque projet --> OK
-- rajouter les légendes de chacune des photos (regarder fin4 de milieux réactifs)
-- adapter la taille des images
 - section sport/activités personnelles ?
 - changer favicon.ico
 
@@ -14,11 +9,11 @@ HPC --> OK
 BOMR --> OK
 CATENARY LIFTING --> OK
 PROGRAMMING --> OK
-CARRIE --> 
-REACTIVE MEDIA --> 
-EDF --> 
-DRONELOAD --> 
-OCTORANGE --> 
+CARRIE --> OK
+REACTIVE MEDIA --> OK
+EDF --> OK
+DRONELOAD --> OK
+OCTORANGE --> OK
 
 
 Add ? 
