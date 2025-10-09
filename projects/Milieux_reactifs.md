@@ -11,7 +11,7 @@ labels:
   - Optimization
   - Thermodynamics
   - Simulations
-summary: "BLABLA"
+summary: "Plasma-assisted ignition modeling for hydrogen-air combustion using thermochemical simulations."
 period: CentraleSupélec
 ---
 
@@ -20,7 +20,7 @@ period: CentraleSupélec
 <div class="container py-3">
 
 <p>
-This project was carried out as part of the Reactive Media course at EPFL and focused on modeling plasma-assisted ignition in a hydrogen-air gas turbine. 
+This project was carried out as part of the Reactive Media course at CentraleSupélec and focused on modeling plasma-assisted ignition in a hydrogen-air gas turbine. 
 The objective was to study the influence of plasma discharges on ignition delay, gas temperature, and combustion stability. 
 The work combined thermochemical modeling and simulation in a Perfectly Stirred Reactor (PSR) configuration.
 </p>
@@ -32,6 +32,7 @@ The ignition temperature, or Tspark, was found iteratively, and the operating co
 
 <p align="center">
   <img src="../img/Milieux_reactifs/check_phi.png" alt="Temperature at steady state as a function of equivalence ratio" style="max-width: 750px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Temperature at steady state as a function of equivalence ratio.</span>
 </p>
 
 <p>
@@ -42,6 +43,7 @@ Different numbers of pulses and gas velocities were tested to determine the cond
 
 <p align="center">
   <img src="../img/Milieux_reactifs/Tpulse3.png" alt="Temperature evolution under multiple plasma pulses showing ignition" style="max-width: 750px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Temperature evolution under multiple plasma pulses showing ignition.</span>
 </p>
 
 <p>
@@ -51,6 +53,7 @@ Subsequent analyses focused on the evolution of gas temperature over time for va
 
 <p align="center">
   <img src="../img/Milieux_reactifs/5000s_vitesse_raccourci.png" alt="Temperature evolution for different gas velocities" style="max-width: 850px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Temperature evolution for different gas velocities.</span>
 </p>
 
 <p>

@@ -16,7 +16,6 @@ CATENARY LIFTING --> OK
 PROGRAMMING --> OK
 CARRIE --> 
 REACTIVE MEDIA --> 
-    - remove title from the images and put it in caption english
 EDF --> 
 DRONELOAD --> 
 OCTORANGE --> 

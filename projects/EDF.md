@@ -12,7 +12,7 @@ labels:
   - Machine Learning
   - Times series
 
-summary: "Robot control and SLAM in a dynamic environment"
+summary: "Electricity consumption forecasting using machine learning and time-series modeling."
 period: CentraleSupélec
 ---
 
@@ -33,6 +33,7 @@ A time-lag structure was added to include the influence of past consumption on f
 
 <p align="center">
   <img src="../img/edf/sumwin.png" alt="Daily consumption profiles during summer and winter" style="max-width: 700px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Daily consumption profiles during summer and winter.</span>
 </p>
 
 <p>
@@ -43,6 +44,7 @@ The random forest and gradient boosting models achieved the best accuracy, captu
 
 <p align="center">
   <img src="../img/edf/boost.png" alt="Gradient boosting model predictions compared with actual data" style="max-width: 700px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Gradient boosting model predictions compared with actual data.</span>
 </p>
 
 <p>

@@ -14,7 +14,7 @@ labels:
   - Embedded systems
   - Machine Learning
   - Robotics
-summary: "An autonomous robot for carrying charges"
+summary: "Development of an autonomous load-carrying robot with real-time person tracking and embedded control."
 period: EPFL Master
 ---
 
@@ -25,7 +25,7 @@ period: EPFL Master
 <p>
 As part of the Product Design and Systems Engineering in a Team course at EPFL, I contributed to the development of CarriE, an autonomous robot designed to help users carry heavy loads in public indoor spaces such as airports, shopping malls, and train stations. 
 The system combines computer vision for person re-identification, ultrasonic sensors for obstacle detection, and a mobile interface enabling both autonomous and manual control. 
-My main role focused on implementing the camera-based tracking system, developing the web interface between the Raspberry Pi and Arduino, and creating the mobile app used to control the robot. 
+My main role focused on implementing the camera-based tracking system, developing the web interface between the Raspberry Pi, Arduino and computer, and creating the mobile app used to control the robot. 
 The prototype successfully demonstrated reliable user tracking and smooth navigation, validating the concept for large-scale deployment within a rental-based mobility service.
 </p>
 
@@ -34,7 +34,7 @@ The prototype successfully demonstrated reliable user tracking and smooth naviga
 </p>
 
 <p>
-The robot was built as a compact mobile platform capable of transporting up to 30 kilograms while maintaining stability in dynamic environments. 
+The robot was built as a compact mobile platform capable of transporting up to 50 kilograms while maintaining stability in dynamic environments. 
 It uses two stepper-driven wheels for differential motion and two passive caster wheels for balance. 
 The onboard system integrates a Raspberry Pi 5, an Arduino Uno, and several sensors that handle perception, communication, and control tasks.
 </p>
@@ -45,7 +45,7 @@ The onboard system integrates a Raspberry Pi 5, an Arduino Uno, and several sens
 
 <p>
 The electrical and mechanical integration was realized by connecting the Raspberry Pi, responsible for image processing and data handling, with the Arduino that manages motor control and sensor feedback. 
-The early prototype shown below was used to test motor drivers, power distribution, and serial communication between the two boards.
+The early prototype shown below was used to pitch the project, test the code, and validate the overall design.
 </p>
 
 <p align="center">

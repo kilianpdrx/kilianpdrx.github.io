@@ -25,6 +25,8 @@ The goal was to design and program a system capable of performing these tasks bo
 
 <p align="center">
   <img src="../img/droneload/droneload.jpg" alt="DroneLoad quadcopter and control setup" style="max-width: 800px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">DroneLoad quadcopter and control setup.</span>
+
 </p>
 
 <p>
@@ -35,6 +37,8 @@ This configuration provided a modular and robust platform for testing autonomous
 
 <p align="center">
   <img src="../img/droneload/parcours.png" alt="DroneLoad competition course with obstacles and delivery zones" style="max-width: 900px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">DroneLoad competition course with obstacles and delivery zones.</span>
+
 </p>
 
 <p>
@@ -46,11 +50,12 @@ A polynomial-based path planning algorithm was developed to compute smooth traje
 
 <p align="center">
   <img src="../img/droneload/good_path.png" alt="Simulated trajectory for window traversal in 3D space" style="max-width: 700px; margin: 1rem auto; display:block;">
+  <span style="font-size: 0.9rem; color: gray;">Simulated trajectory for window traversal in 3D space.</span>
 </p>
 
 <p>
-The system was tested both in simulation and on the physical prototype. 
-Despite hardware challenges and component failures, the team successfully demonstrated controlled flight, reliable object detection, and preliminary autonomous behaviors in the lab environment. 
+The system was tested both in simulation and on the physical prototype.
+Due to a lot of component failures, we were not able to assess the drone's capabilities in flight, but the team successfully demonstrated reliable object detection, and preliminary autonomous behaviors in the lab environment. 
 The project served as a proof of concept for future iterations aimed at achieving full autonomy in the next competition.
 </p>
 
