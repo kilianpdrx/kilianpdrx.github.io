@@ -2,20 +2,7 @@
 layout: home
 ---
 
-<article class="project-page">
-  <a class="project-page__back" href="{{ '/#projects' | prepend: site.baseurl }}">&larr; Back to projects</a>
-  <h1>{{ page.title }}</h1>
-  {% if page.start_date %}
-    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: -0.75rem;">
-      {{ page.start_date | date: "%b %Y" }}{% if page.end_date %} – {% if page.end_date == "Ongoing" %}Ongoing{% else %}{{ page.end_date | date: "%b %Y" }}{% endif %}{% endif %}{% if page.period %} &middot; {{ page.period }}{% endif %}
-    </p>
-  {% endif %}
-  {% if page.labels %}
-    <div class="project-card__labels" style="margin: 1rem 0 1.5rem;">
-      {% for label in page.labels %}
-        <span class="pill">{{ label }}</span>
-      {% endfor %}
-    </div>
-  {% endif %}
-  {{ content }}
-</article>
+<div class="container py-4">
+  <h1 class="display-4">{{ page.title }}</h1>
+ {{ content }}
+</div>

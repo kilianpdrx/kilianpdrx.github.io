@@ -1,14 +1,9 @@
-<footer class="footer">
-  <div class="footer__inner">
-    <div>&copy; {{ 'now' | date: '%Y' }} {{ site.data.bio.basics.name }}</div>
-    <div class="footer__socials">
-      {% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}
-      {% include about/social.html url=url name='envelope' %}
-      {% for profile in site.data.bio.basics.profiles %}
-        {% capture purl %}{{ profile.url }}{% endcapture %}
-        {% capture pname %}{{ profile.network | downcase }}{% endcapture %}
-        {% include about/social.html url=purl name=pname %}
-      {% endfor %}
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
     </div>
   </div>
 </footer>

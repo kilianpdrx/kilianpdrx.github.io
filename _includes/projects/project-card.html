@@ -1,31 +1,45 @@
-<a class="project-card" href="{{ site.baseurl }}{{ include.page.url }}">
-  {% if include.page.image %}
-    <div class="project-card__media">
-      <img src="{{ site.baseurl }}/{{ include.page.image }}" alt="{{ include.page.title }}" loading="lazy">
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-sm-6 col-md-4">
+      <img src="{{ site.baseurl }}/{{ include.page.image }}" height="225px" class="rounded-start">
     </div>
-  {% endif %}
-  <div class="project-card__body">
-    <div class="project-card__head">
-      <h3 class="project-card__title">{{ include.page.title }}</h3>
-      {% if include.page.start_date %}
-        <span class="project-card__date">
-          {{ include.page.start_date | date: "%b %Y" }}{% if include.page.end_date %} – {% if include.page.end_date == "Ongoing" %}Ongoing{% else %}{{ include.page.end_date | date: "%b %Y" }}{% endif %}{% endif %}
-        </span>
-      {% endif %}
-    </div>
-    {% if include.page.period %}
-      <p class="project-card__period">{{ include.page.period }}</p>
-    {% endif %}
-    {% if include.page.summary %}
-      <p class="project-card__summary">{{ include.page.summary }}</p>
-    {% endif %}
-    {% if include.page.labels %}
-      <div class="project-card__labels">
-        {% for label in include.page.labels limit:4 %}
-          <span class="pill">{{ label }}</span>
-        {% endfor %}
+    <div class="col-sm-6 col-md-8">
+      <div class="card-body py-2 px-3" style="padding-left: 0.75rem;">
+        <h5 class="card-title">
+          {{ include.page.title }}
+          {% if include.page.start_date %}
+            <small class="text-muted float-end">
+              {{ include.page.start_date | date: "%b %Y" }}
+              {% if include.page.end_date %}
+                –
+                {% if include.page.end_date == "Ongoing" %}
+                  Ongoing
+                {% else %}
+                  {{ include.page.end_date | date: "%b %Y" }}
+                {% endif %}
+              {% endif %}
+            </small>
+          {% endif %}
+        </h5>
+
+        {% if include.page.period %}
+          <p class="text-muted mb-1"><em>{{ include.page.period }}</em></p>
+        {% endif %}
+
+        <p class="card-text">{{ include.page.summary }}</p>
+
+        <p>
+          {% for label in include.page.labels %}
+            <span style="background-color: var(--tf-pill-bg)" class="badge rounded-pill">{{ label }}</span>
+          {% endfor %}
+        </p>
+
+        {% if page.projecturl %}
+          <a href="{{ page.projecturl }}" class="btn btn-outline-dark">Project Site</a>
+        {% else %}
+          <a href="{{ site.baseurl}}{{ include.page.url }}" class="btn btn-outline-dark">Read More</a>
+        {% endif %}
       </div>
-    {% endif %}
-    <span class="project-card__more">Read more &rarr;</span>
+    </div>
   </div>
-</a>
+</div>
