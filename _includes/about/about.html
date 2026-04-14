@@ -1,46 +1,28 @@
-<div style="background-color: var(--tf-page-bg-color)" class="bg-gradient py-3">
+<section id="about" class="hero">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <img width="300px" src="{{ site.data.bio.basics.picture }}" class="d-block mx-auto rounded-circle">
-      </div>
-      <div class="col-lg-8">
-        <h1 class="display-4 text-center">{{ site.data.bio.basics.name }}</h1>
-        <p class="lead text-center">{{ site.data.bio.basics.label }}</p>
-        <p class="lead">{{ site.data.bio.basics.summary }}</p>
-        <hr class="my-4">
-        <p class="lead m-0">
-          Interests:
-          {% for interest in site.data.bio.interests %}
-            {{ interest.name }}{% if forloop.last != true %}, {% endif %}
-          {% endfor %}
-        </p>
-        <hr class="my-4">
-        <div class="row">
-
-          {% if site.data.bio.basics.email %}
-            {% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}
-            <div class="col text-center">
-              {% include about/social.html url=url name='envelope' %}
-            </div>
-          {% endif %}
-
+    <div class="hero__inner">
+      <img class="hero__photo" src="{{ site.data.bio.basics.picture }}" alt="{{ site.data.bio.basics.name }}">
+      <div>
+        <h1 class="hero__name">{{ site.data.bio.basics.name }}</h1>
+        <p class="hero__label">{{ site.data.bio.basics.label }}{% if site.data.bio.basics.location.city %} &middot; {{ site.data.bio.basics.location.city }}, {{ site.data.bio.basics.location.countryCode }}{% endif %}</p>
+        <p class="hero__summary">{{ site.data.bio.basics.summary }}</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="mailto:{{ site.data.bio.basics.email }}">
+            <svg class="tf-social"><use xlink:href="{{ '/img/bootstrap-icons.svg' | prepend: site.baseurl }}#envelope"/></svg>
+            <span>Email</span>
+          </a>
           {% for profile in site.data.bio.basics.profiles %}
-            {% capture url %}{{ profile.url }}{% endcapture %}
-            {% capture name %}{{ profile.network | downcase }}{% endcapture %}
-            <div class="col text-center">
-              {% include about/social.html url=url name=name %}
-            </div>
+            <a class="btn" href="{{ profile.url }}" target="_blank" rel="noopener">
+              <svg class="tf-social"><use xlink:href="{{ '/img/bootstrap-icons.svg' | prepend: site.baseurl }}#{{ profile.network | downcase }}"/></svg>
+              <span>{{ profile.network | capitalize }}</span>
+            </a>
           {% endfor %}
-
-          <div class="col text-center">
-            {% include about/social.html 
-              url='/assets/Pouderoux_Kilian_EN.pdf' 
-              name='file-earmark-text' %}
-          </div>
-
+          <a class="btn" href="{{ '/assets/Pouderoux_Kilian_EN.pdf' | prepend: site.baseurl }}" target="_blank" rel="noopener">
+            <svg class="tf-social"><use xlink:href="{{ '/img/bootstrap-icons.svg' | prepend: site.baseurl }}#file-earmark-text"/></svg>
+            <span>Resume PDF</span>
+          </a>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
