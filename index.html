@@ -9,10 +9,17 @@ layout: home
 <section id="interests" class="section section--alt">
   <div class="container">
     <h2 class="section__title">Interests</h2>
-    <div class="interests">
-      {% for entry in site.data.bio.interests %}
-        <span class="pill pill--accent">{{ entry.name }}</span>
-      {% endfor %}
+    <div class="interests-split">
+      <div class="interests-split__intro">
+        <p>I'm a Microengineering Master's student at EPFL with a background spanning mechanics, embedded systems, photonics, and computational science — shaped by a double degree with CentraleSupélec and hands-on research in both hardware and software.</p>
+        <p>Professionally, I'm drawn to projects at the intersection of optics, microsystems, and intelligent computing: from SLM-based optical processors and MEMS devices to parallel simulations and autonomous robotics.</p>
+        <p>Outside the lab, I spend my time on the water — surfing, pumpfoil, and wakesurfing — follow space missions closely through the EPFL Spacecraft Team, and enjoy anything that blends physical intuition with clever engineering.</p>
+      </div>
+      <div class="interests">
+        {% for entry in site.data.bio.interests %}
+          <span class="pill pill--accent">{{ entry.name }}</span>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>

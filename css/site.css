@@ -492,15 +492,31 @@ hr {
 }
 
 /* Interests --------------------------------------------------------------- */
+.interests-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 4rem;
+  max-width: 860px;
+  margin: 0 auto;
+  align-items: start;
+}
+.interests-split__intro p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+}
+.interests-split__intro p:last-child { margin-bottom: 0; }
 .interests {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  justify-content: center;
-  max-width: 880px;
-  margin: 0 auto;
+  align-content: flex-start;
 }
 .interests .pill { font-size: 0.85rem; padding: 0.35rem 0.85rem; }
+@media (max-width: 720px) {
+  .interests-split { grid-template-columns: 1fr; gap: 2rem; }
+}
 
 /* Contact / Footer -------------------------------------------------------- */
 .contact { padding: 5rem 0; text-align: center; }
