@@ -254,8 +254,6 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  max-width: var(--measure);
-  margin: 0 auto;
 }
 .entry {
   border-left: 2px solid var(--border);
@@ -471,8 +469,6 @@ hr {
   grid-template-columns: 200px 1fr;
   gap: 1.6rem 2.2rem;
   align-items: baseline;
-  max-width: var(--measure);
-  margin: 0 auto;
 }
 .skills__category {
   font-weight: 600;

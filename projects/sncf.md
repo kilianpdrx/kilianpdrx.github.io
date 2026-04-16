@@ -5,7 +5,7 @@ image: img/sncf/catenary.jpg
 title: "Catenary lifting"
 start_date: 2024-02
 end_date: 2024-06
-published: true
+published: false
 labels:
   - Python
   - Data science

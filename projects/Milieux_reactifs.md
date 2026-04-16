@@ -5,7 +5,7 @@ image: img/Milieux_reactifs/fin4.png
 title: "Reactive Media"
 start_date: 2023-11
 end_date: 2024-02
-published: true
+published: false
 labels:
   - Matlab
   - Optimization

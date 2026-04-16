@@ -5,7 +5,7 @@ image: img/Octorange/octorange.jpg
 title: "Octorange"
 start_date: 2021-02
 end_date: 2021-06
-published: true
+published: false
 labels:
   - Catia
   - 3D modelisation

@@ -60,13 +60,14 @@ layout: home
         <article class="entry">
           <div class="entry__head">
             <h3 class="entry__org">{{ group.name }}</h3>
-            {% assign first_w = group.items[0] %}
-            {% assign last_w = group.items | last %}
-            <span class="entry__date">
-              {% if last_w.startDate %}{{ last_w.startDate | date: "%b %Y" }}{% endif %}
-              {% if last_w.startDate and first_w.endDate %} – {% endif %}
-              {% if first_w.endDate %}{% if first_w.endDate == "Present" %}Present{% else %}{{ first_w.endDate | date: "%b %Y" }}{% endif %}{% endif %}
-            </span>
+            {% if group.items.size == 1 %}
+              {% assign solo_w = group.items[0] %}
+              <span class="entry__date">
+                {% if solo_w.startDate %}{{ solo_w.startDate | date: "%b %Y" }}{% endif %}
+                {% if solo_w.startDate and solo_w.endDate %} – {% endif %}
+                {% if solo_w.endDate %}{% if solo_w.endDate == "Present" %}Present{% else %}{{ solo_w.endDate | date: "%b %Y" }}{% endif %}{% endif %}
+              </span>
+            {% endif %}
           </div>
           {% for entry in group.items %}
             <div class="entry__role">
@@ -113,11 +114,14 @@ layout: home
             <h3 class="entry__org">
               {% if first_v.website %}<a href="{{ first_v.website }}" target="_blank" rel="noopener">{{ group.name }}</a>{% else %}{{ group.name }}{% endif %}
             </h3>
-            <span class="entry__date">
-              {% if last_v.startDate %}{{ last_v.startDate | date: "%b %Y" }}{% endif %}
-              {% if last_v.startDate and first_v.endDate %} – {% endif %}
-              {% if first_v.endDate %}{% if first_v.endDate == "Present" %}Present{% else %}{{ first_v.endDate | date: "%b %Y" }}{% endif %}{% endif %}
-            </span>
+            {% if group.items.size == 1 %}
+              {% assign solo_v = group.items[0] %}
+              <span class="entry__date">
+                {% if solo_v.startDate %}{{ solo_v.startDate | date: "%b %Y" }}{% endif %}
+                {% if solo_v.startDate and solo_v.endDate %} – {% endif %}
+                {% if solo_v.endDate %}{% if solo_v.endDate == "Present" %}Present{% else %}{{ solo_v.endDate | date: "%b %Y" }}{% endif %}{% endif %}
+              </span>
+            {% endif %}
           </div>
           {% for entry in group.items %}
             <div class="entry__role">

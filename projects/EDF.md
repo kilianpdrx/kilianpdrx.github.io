@@ -5,7 +5,7 @@ image: img/edf/data.png
 title: "EDF"
 start_date: 2023-06
 end_date: 2023-06
-published: true
+published: false
 labels:
   - Data science
   - Python

@@ -7,11 +7,6 @@
   <div class="project-card__body">
     <div class="project-card__head">
       <h3 class="project-card__title">{{ include.page.title }}</h3>
-      {% if include.page.start_date %}
-        <span class="project-card__date">
-          {{ include.page.start_date | date: "%b %Y" }}{% if include.page.end_date %} – {% if include.page.end_date == "Ongoing" %}Ongoing{% else %}{{ include.page.end_date | date: "%b %Y" }}{% endif %}{% endif %}
-        </span>
-      {% endif %}
     </div>
     {% if include.page.period %}
       <p class="project-card__period">{{ include.page.period }}</p>
