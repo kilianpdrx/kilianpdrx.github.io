@@ -170,21 +170,3 @@ layout: home
 </section>
 {% endif %}
 
-<section id="contact" class="section section--alt contact">
-  <div class="container">
-    <h2 class="contact__title">Let's get in touch</h2>
-    <p class="contact__text">Feel free to reach out &mdash; I'd be happy to chat.</p>
-    <div class="contact__actions">
-      <a class="btn btn--primary" href="mailto:{{ site.data.bio.basics.email }}">
-        <svg class="tf-social"><use xlink:href="{{ '/img/bootstrap-icons.svg' | prepend: site.baseurl }}#envelope"/></svg>
-        <span>{{ site.data.bio.basics.email }}</span>
-      </a>
-      {% for profile in site.data.bio.basics.profiles %}
-        <a class="btn" href="{{ profile.url }}" target="_blank" rel="noopener">
-          <svg class="tf-social"><use xlink:href="{{ '/img/bootstrap-icons.svg' | prepend: site.baseurl }}#{{ profile.network | downcase }}"/></svg>
-          <span>{{ profile.network | capitalize }}</span>
-        </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
