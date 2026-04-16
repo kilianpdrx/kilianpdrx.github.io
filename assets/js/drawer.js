@@ -55,7 +55,7 @@
       if (cache.has(url)) {
         html = cache.get(url);
       } else {
-        const res = await fetch(url, { credentials: 'same-origin' });
+        const res = await fetch(url, { credentials: 'same-origin', cache: 'no-cache' });
         if (!res.ok) throw new Error('HTTP ' + res.status);
         html = await res.text();
         cache.set(url, html);
