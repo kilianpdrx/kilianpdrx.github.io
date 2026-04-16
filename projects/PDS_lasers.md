@@ -20,53 +20,16 @@ summary: "SLM mask design with diffusion models for optical computing"
 period: EPFL Master
 ---
 
-<div class="container py-3">
 <p>
-This project was conducted at the Laboratory of Applied Photonic Devices (LAPD) at EPFL during the summer of 2025 as a full-time research effort. It focused on developing a new generation of optical computing tools based on Spatial Light Modulators (SLMs) and AI-driven generative models, with the objective of creating a complete pipeline that converts a target optical function into physical SLM masks and predicts the corresponding light pattern. The idea behind the development of this project is to enhance hardware’ s capabilities. With the fast-paced development of AI, classical hardware struggles to keep up with the growing need for faster and more energy eﬃcient devices. In today’s systems, most of the energy and latency come from the shuttling of data between the device and the host. Optics technologies are regarded as a major keystone for the future development of datacenters, devices and components. They oﬀer high bandwidth, low-latency, and low-energy transformations at the unmatchable speed of light.
+Conducted full-time at EPFL's Laboratory of Applied Photonic Devices (LAPD), this project develops an AI-driven pipeline for optical computing on Spatial Light Modulators (SLMs). A dual-decoder Variational Auto-Encoder jointly embeds SLM inputs and their optical outputs, and a latent diffusion model learns to generate new valid masks directly from data, bypassing slow physics simulations. Two optical setups were explored — a compact zigzag configuration on a gold-coated slab and a multi-plane SLM bench used for data acquisition — together with conditioning strategies that drive the generator toward user-specified optical functions. The final proof of concept demonstrates that a neural network can design SLM masks whose predicted light patterns match the target, an early step toward real-time AI-assisted optical design.
 </p>
 
-<p>
-By combining Variational Auto-Encoders (VAEs) and Latent Diffusion Models (LDMs), the system learns to design optical masks directly from data, bypassing slow physics simulations.  
-This enables the generation of diverse, hardware-aware masks that perform specific optical functions efficiently, demonstrating how machine learning can accelerate energy-efficient, high-speed optical information processing.
-</p>
+<figure>
+  <img src="../img/PDS_lasers/pipeline.png" alt="Pipeline overview showing the VAE, diffusion model, and conditioning strategy.">
+  <figcaption>End-to-end pipeline: VAE, latent diffusion model, and conditioning strategy.</figcaption>
+</figure>
 
-<p align="center">
-  <img src="../img/PDS_lasers/pipeline.png" alt="Pipeline overview showing the connection between the VAE, diffusion model, and conditioning strategy." style="max-width: 900px; margin: 1rem auto; display:block;">
-  <span style="font-size: 0.9rem; color: gray;">Pipeline overview showing the connection between the VAE, diffusion model, and conditioning strategy.</span>
-</p>
-
-<p>
-Two optical setups were explored during the project.  
-The first, a compact “zigzag” configuration, uses a gold-coated glass slab to reflect light multiple times within a small space, paving the way for integrated optical computing.  
-The second setup, shown below, is a robust multi-plane SLM configuration that offers greater flexibility and precision for data acquisition and model training.
-</p>
-
-<p align="center">
-  <img src="../img/PDS_lasers/setup projet 2.2.png" alt="Optical setup with laser, SLM, mirror, and camera used for multi-plane optical data acquisition." style="max-width: 900px; margin: 1rem auto; display:block;">
-  <span style="font-size: 0.9rem; color: gray;">Optical setup with laser, SLM, mirror, and camera used for multi-plane optical data acquisition.</span>
-</p>
-
-<p>
-On the software side, a full AI pipeline was implemented:
-</p>
-<ul>
-  <li>A custom dual-decoder VAE encoding both SLM inputs and optical outputs.</li>
-  <li>A diffusion model operating in the latent space to generate new, valid SLM patterns.</li>
-  <li>Conditioning strategies to guide mask generation: from hard target matching to future text-to-physics conditioning.</li>
-</ul>
-
-<p align="center">
-  <img src="../img/PDS_lasers/small_feat.png" alt="Example input SLM mask showing small feature patterns used for training." style="max-width: 400px; margin: 1rem auto; display:block;">
-  <span style="font-size: 0.9rem; color: gray;">Example input SLM mask showing small feature patterns used for training.</span>
-</p>
-
-<p>
-The final proof of concept demonstrated that neural networks can design optical masks that recreate a desired light pattern, marking an early step toward real-time, AI-assisted optical design.  
-Below is an example of a generated optical output obtained from the trained pipeline.
-</p>
-
-<p align="center">
-  <img src="../img/PDS_lasers/output_surf.png" alt="Example of optical output generated by the AI pipeline using SLM masks." style="max-width: 1000px; margin: 1rem auto; display:block;">
-  <span style="font-size: 0.9rem; color: gray;">Example of optical output generated by the AI pipeline using SLM masks.</span>
-</p>
-</div>
+<figure>
+  <img src="../img/PDS_lasers/output_surf.png" alt="Example of optical output generated by the AI pipeline using SLM masks.">
+  <figcaption>Optical output generated by the trained pipeline from an SLM mask.</figcaption>
+</figure>

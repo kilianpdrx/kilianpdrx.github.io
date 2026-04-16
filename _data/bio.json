@@ -107,6 +107,19 @@
   ],
   "work": [
     {
+      "company": "IMEC",
+      "position": "Microfluidics & Photonics Intern",
+      "website": "https://www.imec-int.com",
+      "startDate": "2026-02-01",
+      "endDate": "2026-07-31",
+      "summary": "Interdisciplinary research internship in Leuven, Belgium, combining microfluidics, photonics, and systems engineering to develop an integrated on-chip cell sorting platform for biomedical diagnostics applications.",
+      "highlights": [
+        "Design and assemble an integrated optical and microfluidic setup, combining fluidic, electronic, and photonic components",
+        "Develop data acquisition and processing pipelines to analyze and visualize cell sorting performance metrics",
+        "Prepare biological samples and conduct wet lab experiments to characterize the chip's sorting performance"
+      ]
+    },
+    {
       "company": "Watchmaker (Mission Junior Entreprise EPFL)",
       "position": "Maintenance Engineer",
       "website": "",
@@ -121,11 +134,8 @@
       "website": "",
       "startDate": "2024-02-01",
       "endDate": "2024-05-01",
-      "summary": "",
-      "highlights": [
-        "Analysis of technical documents on more than 60 pieces of equipment",
-        "Retrieving PDM Data"
-      ]
+      "summary": "Analyzed technical documents for more than 60 pieces of equipment and retrieved the associated data from the PDM system.",
+      "highlights": []
     },
     {
       "company": "Pfeiffer Vacuum",
@@ -133,27 +143,17 @@
       "website": "",
       "startDate": "2023-07-01",
       "endDate": "2023-08-15",
-      "summary": "Discover the operating environment in a company specializing in vacuum technologies.",
-      "highlights": [
-        "Preparation of orders for the shipping and production departments",
-        "Inventory and handling of delivery errors"
-      ]
+      "summary": "Discovered the operating environment of a vacuum-technology company by preparing orders for the shipping and production departments and handling inventory and delivery errors.",
+      "highlights": []
     },
-
-    
     {
       "company": "École Polytechnique Fédérale de Lausanne, EPFL",
       "position": "Teaching Assistant",
       "website": "",
       "startDate": "2021-09-01",
       "endDate": "Present",
-      "summary": "",
-      "highlights": [
-        "Materials : from chemistry to properties",
-        "Programming for engineers",
-        "Mathematics",
-        "Information, computation and communication"
-      ]
+      "summary": "Teaching assistant for several undergraduate courses including Materials (chemistry to properties), Programming for Engineers, Mathematics, and Information, Computation and Communication.",
+      "highlights": []
     }
   ],
   "volunteer": [
@@ -188,11 +188,8 @@
       "website": "https://usclausanne.ch",
       "startDate": "2025-08-01",
       "endDate": "Present",
-      "summary": "Student surf association at EPFL & UNIL organizing water sports and community events.",
-      "highlights": [
-        "Oversee the association's budget, ensuring financial health and sustainability.",
-        "Members inscription management and event logistics coordination."
-      ]
+      "summary": "Oversee the budget of the EPFL & UNIL student surf association to ensure its financial health and sustainability. Manage member registrations and coordinate event logistics across water-sport and community activities.",
+      "highlights": []
     },
     {
       "company": "USC Lausanne",
@@ -200,11 +197,8 @@
       "website": "https://usclausanne.ch",
       "startDate": "2024-09-01",
       "endDate": "2025-08-01",
-      "summary": "Student surf association at EPFL & UNIL organizing water sports and community events.",
-      "highlights": [
-        "Organized surf, pumpfoil, winch surf, and wakesurf sessions for students",
-        "Managed partnerships and sponsorship acquisition for student activities"
-      ]
+      "summary": "Organized surf, pumpfoil, winch surf, and wakesurf sessions for EPFL & UNIL students. Managed partnerships and sponsorship acquisition to support the association's activities.",
+      "highlights": []
     },
     {
       "company": "Forum CentraleSupélec",
@@ -212,12 +206,8 @@
       "website": "https://www.site.forum-cs.fr",
       "startDate": "2022-01-01",
       "endDate": "2024-01-01",
-      "summary": "Student association organizing a major business forum with 200+ companies and a turnover of €1.3 million.",
-      "highlights": [
-        "Manage relations with partner companies and coordinate event logistics for exhibitors and participants.",
-        "Ensure quality management of the event, including preparation of the annual audit and compliance with ISO standards.",
-        "Develop automation algorithms to streamline repetitive tasks, reducing workload and improving team efficiency"
-      ]
+      "summary": "Managed partner-company relations and event logistics for a major business forum with 200+ exhibitors and a €1.3M turnover, while handling quality management through the annual audit and ISO compliance. Developed automation algorithms to streamline repetitive tasks and improve team efficiency.",
+      "highlights": []
     }
 
 

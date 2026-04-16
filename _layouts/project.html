@@ -2,20 +2,67 @@
 layout: home
 ---
 
+{%- comment -%} Compute duration in whole months {%- endcomment -%}
+{%- assign duration_months = 0 -%}
+{%- if page.start_date and page.end_date and page.end_date != "Ongoing" -%}
+  {%- assign start_secs = page.start_date | date: "%s" | plus: 0 -%}
+  {%- assign end_secs = page.end_date | date: "%s" | plus: 0 -%}
+  {%- assign diff_secs = end_secs | minus: start_secs -%}
+  {%- assign duration_months = diff_secs | divided_by: 2629800 -%}
+  {%- if duration_months < 1 -%}{%- assign duration_months = 1 -%}{%- endif -%}
+{%- endif -%}
+
 <article class="project-page">
   <a class="project-page__back" href="{{ '/#projects' | prepend: site.baseurl }}">&larr; Back to projects</a>
   <h1>{{ page.title }}</h1>
-  {% if page.start_date %}
-    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: -0.75rem;">
-      {{ page.start_date | date: "%b %Y" }}{% if page.end_date %} – {% if page.end_date == "Ongoing" %}Ongoing{% else %}{{ page.end_date | date: "%b %Y" }}{% endif %}{% endif %}{% if page.period %} &middot; {{ page.period }}{% endif %}
-    </p>
+  {% if page.summary %}
+    <p class="project-page__lead">{{ page.summary }}</p>
   {% endif %}
-  {% if page.labels %}
-    <div class="project-card__labels" style="margin: 1rem 0 1.5rem;">
-      {% for label in page.labels %}
-        <span class="pill">{{ label }}</span>
-      {% endfor %}
-    </div>
-  {% endif %}
-  {{ content }}
+
+  <section class="project-overview" aria-label="Project overview">
+    <h2 class="project-overview__title">Project Overview</h2>
+    <dl class="project-overview__list">
+      {% if page.start_date %}
+        <div class="project-overview__row">
+          <dt>When</dt>
+          <dd>
+            {{ page.start_date | date: "%b %Y" }}{% if page.end_date %} – {% if page.end_date == "Ongoing" %}Ongoing{% else %}{{ page.end_date | date: "%b %Y" }}{% endif %}{% endif %}
+          </dd>
+        </div>
+      {% endif %}
+      {% if duration_months > 0 %}
+        <div class="project-overview__row">
+          <dt>Duration</dt>
+          <dd>{{ duration_months }} month{% if duration_months != 1 %}s{% endif %}</dd>
+        </div>
+      {% elsif page.end_date == "Ongoing" %}
+        <div class="project-overview__row">
+          <dt>Duration</dt>
+          <dd>Ongoing</dd>
+        </div>
+      {% endif %}
+      {% if page.period %}
+        <div class="project-overview__row">
+          <dt>Context</dt>
+          <dd>{{ page.period }}</dd>
+        </div>
+      {% endif %}
+      {% if page.labels and page.labels.size > 0 %}
+        <div class="project-overview__row">
+          <dt>Stack &amp; Skills</dt>
+          <dd>
+            <div class="pill-group">
+              {% for label in page.labels %}
+                <span class="pill">{{ label }}</span>
+              {% endfor %}
+            </div>
+          </dd>
+        </div>
+      {% endif %}
+    </dl>
+  </section>
+
+  <div class="project-page__body">
+    {{ content }}
+  </div>
 </article>

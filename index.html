@@ -5,10 +5,55 @@ layout: home
 
 {% include about/about.html %}
 
-{% if site.data.bio.work %}
-<section id="experience" class="section">
+{% if site.data.bio.interests %}
+<section id="interests" class="section section--alt">
   <div class="container">
-    <h2 class="section__title">Experience</h2>
+    <h2 class="section__title">Interests</h2>
+    <div class="interests">
+      {% for entry in site.data.bio.interests %}
+        <span class="pill pill--accent">{{ entry.name }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if site.data.bio.education %}
+<section id="education" class="section">
+  <div class="container">
+    <h2 class="section__title">Education</h2>
+    <div class="entries">
+      {% for entry in site.data.bio.education %}
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__org">{% if entry.website %}<a href="{{ entry.website }}" target="_blank" rel="noopener">{{ entry.institution }}</a>{% else %}{{ entry.institution }}{% endif %}</h3>
+            <span class="entry__date">
+              {% if entry.startDate %}{{ entry.startDate | date: "%b %Y" }}{% endif %}
+              {% if entry.startDate and entry.endDate %} – {% endif %}
+              {% if entry.endDate %}{% if entry.endDate == "Present" %}Present{% else %}{{ entry.endDate | date: "%b %Y" }}{% endif %}{% endif %}
+            </span>
+          </div>
+          <p class="entry__position">{{ entry.studyType }}{% if entry.area %}, {{ entry.area }}{% endif %}</p>
+          {% if entry.summary %}
+            <p class="entry__summary">{{ entry.summary }}</p>
+          {% endif %}
+          {% if entry.courses and entry.courses.size > 0 %}
+            <details class="courses">
+              <summary>Key courses ({{ entry.courses.size }})</summary>
+              <ul>{% for c in entry.courses %}<li>{{ c }}</li>{% endfor %}</ul>
+            </details>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if site.data.bio.work %}
+<section id="experience" class="section section--alt">
+  <div class="container">
+    <h2 class="section__title">Professional Experience</h2>
     <div class="entries">
       {% assign grouped_work = site.data.bio.work | group_by: "company" %}
       {% for group in grouped_work %}
@@ -52,42 +97,10 @@ layout: home
 </section>
 {% endif %}
 
-{% if site.data.bio.education %}
-<section id="education" class="section section--alt">
-  <div class="container">
-    <h2 class="section__title">Education</h2>
-    <div class="entries">
-      {% for entry in site.data.bio.education %}
-        <article class="entry">
-          <div class="entry__head">
-            <h3 class="entry__org">{% if entry.website %}<a href="{{ entry.website }}" target="_blank" rel="noopener">{{ entry.institution }}</a>{% else %}{{ entry.institution }}{% endif %}</h3>
-            <span class="entry__date">
-              {% if entry.startDate %}{{ entry.startDate | date: "%b %Y" }}{% endif %}
-              {% if entry.startDate and entry.endDate %} – {% endif %}
-              {% if entry.endDate %}{% if entry.endDate == "Present" %}Present{% else %}{{ entry.endDate | date: "%b %Y" }}{% endif %}{% endif %}
-            </span>
-          </div>
-          <p class="entry__position">{{ entry.studyType }}{% if entry.area %}, {{ entry.area }}{% endif %}</p>
-          {% if entry.summary %}
-            <p class="entry__summary">{{ entry.summary }}</p>
-          {% endif %}
-          {% if entry.courses and entry.courses.size > 0 %}
-            <details class="courses">
-              <summary>Key courses ({{ entry.courses.size }})</summary>
-              <ul>{% for c in entry.courses %}<li>{{ c }}</li>{% endfor %}</ul>
-            </details>
-          {% endif %}
-        </article>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-
 {% include projects/projects.html %}
 
 {% if site.data.bio.volunteer %}
-<section id="volunteer" class="section">
+<section id="volunteer" class="section section--alt">
   <div class="container">
     <h2 class="section__title">Associative Experience</h2>
     <div class="entries">
@@ -106,9 +119,6 @@ layout: home
               {% if first_v.endDate %}{% if first_v.endDate == "Present" %}Present{% else %}{{ first_v.endDate | date: "%b %Y" }}{% endif %}{% endif %}
             </span>
           </div>
-          {% if first_v.summary %}
-            <p class="entry__summary">{{ first_v.summary }}</p>
-          {% endif %}
           {% for entry in group.items %}
             <div class="entry__role">
               <div class="entry__role-head">
@@ -121,6 +131,9 @@ layout: home
                   </span>
                 {% endif %}
               </div>
+              {% if entry.summary and entry.summary != "" %}
+                <p class="entry__summary">{{ entry.summary }}</p>
+              {% endif %}
               {% if entry.highlights and entry.highlights.size > 0 %}
                 <ul class="entry__highlights">
                   {% for h in entry.highlights %}<li>{{ h }}</li>{% endfor %}
@@ -136,7 +149,7 @@ layout: home
 {% endif %}
 
 {% if site.data.bio.skills %}
-<section id="skills" class="section section--alt">
+<section id="skills" class="section">
   <div class="container">
     <h2 class="section__title">Skills</h2>
     <div class="skills">
@@ -153,23 +166,10 @@ layout: home
 </section>
 {% endif %}
 
-{% if site.data.bio.interests %}
-<section id="interests" class="section">
-  <div class="container">
-    <h2 class="section__title">Interests</h2>
-    <div class="interests">
-      {% for entry in site.data.bio.interests %}
-        <span class="pill pill--accent">{{ entry.name }}</span>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-
 <section id="contact" class="section section--alt contact">
   <div class="container">
     <h2 class="contact__title">Let's get in touch</h2>
-    <p class="contact__text">I'm looking for a 6-month internship starting February 2026. Feel free to reach out &mdash; I'd be happy to chat.</p>
+    <p class="contact__text">Feel free to reach out &mdash; I'd be happy to chat.</p>
     <div class="contact__actions">
       <a class="btn btn--primary" href="mailto:{{ site.data.bio.basics.email }}">
         <svg class="tf-social"><use xlink:href="{{ '/img/bootstrap-icons.svg' | prepend: site.baseurl }}#envelope"/></svg>
