@@ -4,8 +4,9 @@ type: project
 image: img/PDS_hylab/logo_proj_hylab.png
 title: "Semester project - electrode optimization"
 start_date: 2025-09
-end_date: Ongoing
+end_date: 2026-01
 published: true
+lab: "Laboratory of Hybrid Photonics (HYLAB), EPFL"
 labels:
   - Python
   - CST

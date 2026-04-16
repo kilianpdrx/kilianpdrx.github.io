@@ -47,6 +47,12 @@ layout: home
           <dd>{{ page.period }}</dd>
         </div>
       {% endif %}
+      {% if page.lab %}
+        <div class="project-overview__row">
+          <dt>Laboratory</dt>
+          <dd>{{ page.lab }}</dd>
+        </div>
+      {% endif %}
       {% if page.labels and page.labels.size > 0 %}
         <div class="project-overview__row">
           <dt>Stack &amp; Skills</dt>

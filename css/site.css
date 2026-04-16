@@ -255,6 +255,7 @@ hr {
   flex-direction: column;
   gap: 2.5rem;
   max-width: 860px;
+  margin: 0 auto;
 }
 .entry {
   border-left: 2px solid var(--border);
@@ -307,6 +308,11 @@ hr {
   justify-content: space-between;
   align-items: baseline;
   gap: 0.5rem;
+}
+.entry__location {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0.1rem 0 0.5rem;
 }
 .entry__position { font-weight: 600; font-size: 1.05rem; }
 .entry__highlights {
@@ -471,6 +477,7 @@ hr {
   gap: 1.6rem 2.2rem;
   align-items: baseline;
   max-width: 860px;
+  margin: 0 auto;
 }
 .skills__category {
   font-weight: 600;

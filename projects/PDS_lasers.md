@@ -6,6 +6,7 @@ title: "Semester project - optical computing"
 start_date: 2025-06
 end_date: 2025-09
 published: true
+lab: "Laboratory of Applied Photonic Devices (LAPD), EPFL"
 labels:
   - Pytorch
   - Optical computing

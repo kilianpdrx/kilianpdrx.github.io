@@ -49,7 +49,8 @@
   ],
   "education": [
     {
-      "institution": "Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland",
+      "institution": "Ecole Polytechnique Fédérale de Lausanne (EPFL)",
+      "location": "Lausanne, Switzerland",
       "area": "Microengineering, minor in Computational Science and Engineering",
       "studyType": "Master of Science",
       "website": "https://www.epfl.ch",
@@ -70,7 +71,8 @@
       ]
     },
     {
-      "institution": "CentraleSupélec – Université Paris-Saclay, Paris, France",
+      "institution": "CentraleSupélec – Université Paris-Saclay",
+      "location": "Paris, France",
       "area": "Engineering, highly selective double degree with EPFL",
       "studyType": "Diplôme d'ingenieur",
       "website": "https://www.centralesupelec.fr",
@@ -88,7 +90,8 @@
       ]
     },
     {
-      "institution": "Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland",
+      "institution": "Ecole Polytechnique Fédérale de Lausanne (EPFL)",
+      "location": "Lausanne, Switzerland",
       "area": "Mechanical Engineering",
       "studyType": "Bachelor of Science",
       "website": "https://www.epfl.ch",
@@ -108,6 +111,7 @@
   "work": [
     {
       "company": "IMEC",
+      "location": "Leuven, Belgium",
       "position": "Microfluidics & Photonics Intern",
       "website": "https://www.imec-int.com",
       "startDate": "2026-02-01",
@@ -121,6 +125,7 @@
     },
     {
       "company": "Watchmaker (Mission Junior Entreprise EPFL)",
+      "location": "Lausanne, Switzerland",
       "position": "Maintenance Engineer",
       "website": "",
       "startDate": "2025-03-01",
@@ -130,6 +135,7 @@
     },
     {
       "company": "Pfeiffer Vacuum",
+      "location": "Annecy, France",
       "position": "Operator Intern",
       "website": "",
       "startDate": "2023-07-01",
@@ -139,6 +145,7 @@
     },
     {
       "company": "École Polytechnique Fédérale de Lausanne, EPFL",
+      "location": "Lausanne, Switzerland",
       "position": "Teaching Assistant",
       "website": "",
       "startDate": "2021-09-01",

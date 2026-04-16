@@ -33,6 +33,7 @@ layout: home
               {% if entry.endDate %}{% if entry.endDate == "Present" %}Present{% else %}{{ entry.endDate | date: "%b %Y" }}{% endif %}{% endif %}
             </span>
           </div>
+          {% if entry.location %}<p class="entry__location">{{ entry.location }}</p>{% endif %}
           <p class="entry__position">{{ entry.studyType }}{% if entry.area %}, {{ entry.area }}{% endif %}</p>
           {% if entry.summary %}
             <p class="entry__summary">{{ entry.summary }}</p>
@@ -69,6 +70,8 @@ layout: home
               </span>
             {% endif %}
           </div>
+          {% assign first_w = group.items[0] %}
+          {% if first_w.location %}<p class="entry__location">{{ first_w.location }}</p>{% endif %}
           {% for entry in group.items %}
             <div class="entry__role">
               <div class="entry__role-head">
