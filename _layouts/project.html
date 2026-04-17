@@ -2,13 +2,18 @@
 layout: home
 ---
 
-{%- comment -%} Compute duration in whole months {%- endcomment -%}
+{%- comment -%} Format YYYY-MM strings as MM/YYYY and compute duration {%- endcomment -%}
+{%- assign _sp = page.start_date | split: "-" -%}
+{%- assign _start_fmt = _sp[1] | append: "/" | append: _sp[0] -%}
+{%- assign _start_total = _sp[0] | plus: 0 | times: 12 | plus: _sp[1] | plus: 0 -%}
+
+{%- assign _end_fmt = "" -%}
 {%- assign duration_months = 0 -%}
-{%- if page.start_date and page.end_date and page.end_date != "Ongoing" -%}
-  {%- assign start_secs = page.start_date | date: "%s" | plus: 0 -%}
-  {%- assign end_secs = page.end_date | date: "%s" | plus: 0 -%}
-  {%- assign diff_secs = end_secs | minus: start_secs -%}
-  {%- assign duration_months = diff_secs | divided_by: 2629800 -%}
+{%- if page.end_date and page.end_date != "Ongoing" -%}
+  {%- assign _ep = page.end_date | split: "-" -%}
+  {%- assign _end_fmt = _ep[1] | append: "/" | append: _ep[0] -%}
+  {%- assign _end_total = _ep[0] | plus: 0 | times: 12 | plus: _ep[1] | plus: 0 -%}
+  {%- assign duration_months = _end_total | minus: _start_total -%}
   {%- if duration_months < 1 -%}{%- assign duration_months = 1 -%}{%- endif -%}
 {%- endif -%}
 
@@ -26,7 +31,7 @@ layout: home
         <div class="project-overview__row">
           <dt>When</dt>
           <dd>
-            {{ page.start_date | date: "%m/%Y" }}{% if page.end_date %} – {% if page.end_date == "Ongoing" %}Ongoing{% else %}{{ page.end_date | date: "%m/%Y" }}{% endif %}{% endif %}
+            {{ _start_fmt }}{% if page.end_date %} – {% if page.end_date == "Ongoing" %}Ongoing{% else %}{{ _end_fmt }}{% endif %}{% endif %}
           </dd>
         </div>
       {% endif %}
