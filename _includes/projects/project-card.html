@@ -18,12 +18,6 @@
     <div class="project-card__head">
       <h3 class="project-card__title">{{ p.title }}</h3>
     </div>
-    {% if p.start_date %}
-      <p class="project-card__date">
-        {{ p.start_date | date: "%m/%Y" }}{% if p.end_date %} – {% if p.end_date == "Ongoing" %}Ongoing{% else %}{{ p.end_date | date: "%m/%Y" }}{% endif %}{% endif %}
-        {% if duration_months > 0 %}<span class="project-card__duration">&middot; {{ duration_months }} month{% if duration_months != 1 %}s{% endif %}</span>{% endif %}
-      </p>
-    {% endif %}
     {% if p.period %}
       <p class="project-card__period">{{ p.period }}</p>
     {% endif %}

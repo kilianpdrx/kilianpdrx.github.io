@@ -26,7 +26,7 @@ layout: home
         <div class="project-overview__row">
           <dt>When</dt>
           <dd>
-            {{ page.start_date | date: "%b %Y" }}{% if page.end_date %} – {% if page.end_date == "Ongoing" %}Ongoing{% else %}{{ page.end_date | date: "%b %Y" }}{% endif %}{% endif %}
+            {{ page.start_date | date: "%m/%Y" }}{% if page.end_date %} – {% if page.end_date == "Ongoing" %}Ongoing{% else %}{{ page.end_date | date: "%m/%Y" }}{% endif %}{% endif %}
           </dd>
         </div>
       {% endif %}
