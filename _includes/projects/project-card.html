@@ -1,22 +1,38 @@
-<a class="project-card" href="{{ site.baseurl }}{{ include.page.url }}">
-  {% if include.page.image %}
+{%- assign p = include.page -%}
+{%- assign duration_months = 0 -%}
+{%- if p.start_date and p.end_date and p.end_date != "Ongoing" -%}
+  {%- assign _s = p.start_date | date: "%s" | plus: 0 -%}
+  {%- assign _e = p.end_date   | date: "%s" | plus: 0 -%}
+  {%- assign _diff = _e | minus: _s -%}
+  {%- assign duration_months = _diff | divided_by: 2629800 -%}
+  {%- if duration_months < 1 -%}{%- assign duration_months = 1 -%}{%- endif -%}
+{%- endif -%}
+
+<a class="project-card" href="{{ site.baseurl }}{{ p.url }}">
+  {% if p.image %}
     <div class="project-card__media">
-      <img src="{{ site.baseurl }}/{{ include.page.image }}" alt="{{ include.page.title }}" loading="lazy">
+      <img src="{{ site.baseurl }}/{{ p.image }}" alt="{{ p.title }}" loading="lazy">
     </div>
   {% endif %}
   <div class="project-card__body">
     <div class="project-card__head">
-      <h3 class="project-card__title">{{ include.page.title }}</h3>
+      <h3 class="project-card__title">{{ p.title }}</h3>
     </div>
-    {% if include.page.period %}
-      <p class="project-card__period">{{ include.page.period }}</p>
+    {% if p.start_date %}
+      <p class="project-card__date">
+        {{ p.start_date | date: "%m/%Y" }}{% if p.end_date %} – {% if p.end_date == "Ongoing" %}Ongoing{% else %}{{ p.end_date | date: "%m/%Y" }}{% endif %}{% endif %}
+        {% if duration_months > 0 %}<span class="project-card__duration">&middot; {{ duration_months }} month{% if duration_months != 1 %}s{% endif %}</span>{% endif %}
+      </p>
     {% endif %}
-    {% if include.page.summary %}
-      <p class="project-card__summary">{{ include.page.summary }}</p>
+    {% if p.period %}
+      <p class="project-card__period">{{ p.period }}</p>
     {% endif %}
-    {% if include.page.labels %}
+    {% if p.summary %}
+      <p class="project-card__summary">{{ p.summary }}</p>
+    {% endif %}
+    {% if p.labels %}
       <div class="project-card__labels">
-        {% for label in include.page.labels limit:4 %}
+        {% for label in p.labels %}
           <span class="pill">{{ label }}</span>
         {% endfor %}
       </div>
