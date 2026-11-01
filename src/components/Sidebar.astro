@@ -26,7 +26,7 @@ const NAV = [
     <img class="sidebar__photo" src="/img/foto-320.jpg" alt={`Portrait of ${name}`} width="320" height="316">
     <div>
       <Name class="sidebar__name"><a href="/">{name}</a></Name>
-      <p class="sidebar__tagline">{label} · {location.city}, {location.countryCode}</p>
+      <p class="sidebar__tagline">{label}<span class="sidebar__location">{location.city}, {location.countryCode}</span></p>
     </div>
   </div>
 
