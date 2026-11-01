@@ -1,10 +1,10 @@
 {
   "basics": {
     "name": "Kilian Pouderoux",
-    "label": "Student",
+    "label": "MSc Microengineering Student",
     "picture": "/img/foto.jpeg",
-    "email": "kilian.pouderoux@epfl.ch",
-    "summary": "Final year Master’s student in Microengineering at EPFL and CentraleSupélec. With expertise in microsystems, nanotechnology, and computational science, I bring strong curiosity, organization, and autonomy to my work. I am eager to contribute to high-tech, fast-moving projects and am seeking a 6-month internship starting in February 2026.",
+    "email": "kilianpdrx@icloud.com",
+    "summary": "Final-year Master’s student in Microengineering at EPFL and CentraleSupélec, completing my Master’s thesis at Coherent. With expertise in microsystems, optics, and nanotechnology, I bring strong curiosity, organization, and autonomy to my work. I graduate in February 2027 and am seeking a full-time position in high-tech, fast-moving projects, starting in June 2027.",
     "location": {
       "city": "Lausanne",
       "countryCode": "CH"
@@ -23,7 +23,7 @@
     ]
   },
   "interestsIntro": [
-    "My technical expertise lies at the intersection of microsystems, optics and intelligent software. From developing ground station architecture for CubeSat missions to designing microfluidic platforms at IMEC, I thrive on bridging the gap between embedded hardware and high performance computing. I am particularly driven by the challenge of building high-impact systems in multidisciplinary environments.",
+    "My technical expertise lies at the intersection of microsystems, optics and intelligent software. From developing ground station architecture for CubeSat missions to designing microfluidic platforms at IMEC and characterizing high-power lasers at Coherent, I thrive on bridging the gap between embedded hardware and high performance computing. I am particularly driven by the challenge of building high-impact systems in multidisciplinary environments.",
     "Outside of engineering, I’m deeply curious about the broader scientific landscape, especially astronomy and the mechanics of space exploration. Sport addict, I spend most of my free time on the water, improving my kitesurfing and pumpfoiling skills."
   ],
   "interests": [
@@ -110,7 +110,7 @@
       "studyType": "Master of Science",
       "website": "https://www.epfl.ch",
       "startDate": "2024-09-01",
-      "endDate": "Present",
+      "endDate": "2027-02-01",
       "courses": [
         "Computational optics",
         "Advanced MEMS",
@@ -165,17 +165,31 @@
   ],
   "work": [
     {
+      "company": "Coherent",
+      "location": "Zürich, Switzerland",
+      "position": "Master's Thesis",
+      "website": "https://www.coherent.com",
+      "startDate": "2026-09-01",
+      "endDate": "Present",
+      "summary": "Master's thesis on the experimental investigation of grating properties in high-power DFB lasers, combining optical setup development, device characterization, and simulation to establish robust laser design rules.",
+      "highlights": [
+        "Design and build an automated free-space and fiber-based optical setup for the electro-optical characterization of laser devices",
+        "Develop data analysis pipelines to process, visualize, and validate key laser performance metrics",
+        "Simulate DFB laser behavior and compare it with measurements to assess grating and epitaxial design variations"
+      ]
+    },
+    {
       "company": "IMEC",
       "location": "Leuven, Belgium",
       "position": "Microfluidics & Photonics Intern",
       "website": "https://www.imec-int.com",
       "startDate": "2026-02-01",
       "endDate": "2026-07-31",
-      "summary": "Interdisciplinary research internship in Leuven, Belgium, combining microfluidics, photonics, and systems engineering to develop an integrated on-chip cell sorting platform for biomedical diagnostics applications.",
+      "summary": "Interdisciplinary research internship combining microfluidics, photonics, and systems engineering to develop an integrated on-chip cell sorting platform for biomedical diagnostics applications.",
       "highlights": [
-        "Design and assemble an integrated optical and microfluidic setup, combining fluidic, electronic, and photonic components",
-        "Develop data acquisition and processing pipelines to analyze and visualize cell sorting performance metrics",
-        "Prepare biological samples and conduct wet lab experiments to characterize the chip's sorting performance"
+        "Designed and assembled an integrated optical and microfluidic setup, combining fluidic, electronic, and photonic components",
+        "Developed data acquisition and processing pipelines to analyze and visualize cell sorting performance metrics",
+        "Prepared biological samples and conducted wet lab experiments to characterize the chip's sorting performance"
       ]
     },
     {
@@ -206,15 +220,15 @@
   "volunteer": [
     {
       "company": "EPFL Spacecraft Team",
-      "position": "Pole Leader - Ground Segment",
+      "position": "Team Leader - Ground Segment",
       "website": "https://www.epflspacecraftteam.ch",
       "startDate": "2025-08-01",
       "endDate": "2026-02-01",
       "summary": "Student association focused on the design, development, and launch of innovative satellite and space related projects.",
       "highlights": [
-        "Lead a team of 8 to develop and operate ground stations for satellite communications.",
-        "Develop and assemble an X-band antenna, the first student-operated system of its kind.",
-        "Design and implement the antenna’s control software."
+        "Led a team of 8 to develop and operate ground stations for satellite communications.",
+        "Developed and assembled an X-band antenna, the first student-operated system of its kind.",
+        "Developed full-stack software for distributed antenna control and mission control."
       ]
     },
     {
@@ -224,8 +238,8 @@
       "startDate": "2024-09-01",
       "endDate": "2025-08-01",
       "highlights": [
-        "Contribute to a digital twin for satellite modeling, enabling faster design iterations and performance optimization.",
-        "Perform tradeoff analyses on critical satellite parameters, guiding key design decisions and improving mission reliability."
+        "Contributed to a digital twin for satellite modeling, enabling faster design iterations and performance optimization.",
+        "Performed tradeoff analyses on critical satellite parameters, guiding key design decisions and improving mission reliability."
       ]
     },
     {
@@ -234,7 +248,7 @@
       "website": "https://usclausanne.ch",
       "startDate": "2025-08-01",
       "endDate": "2026-02-01",
-      "summary": "Oversee the budget of the EPFL & UNIL student surf association to ensure its financial health and sustainability. Manage member registrations and coordinate event logistics across water-sport and community activities."
+      "summary": "Oversaw the budget of the EPFL & UNIL student surf association to ensure its financial health and sustainability. Managed member registrations and coordinated event logistics across water-sport and community activities."
     },
     {
       "company": "USC Lausanne",
