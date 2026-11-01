@@ -59,11 +59,22 @@
   ],
   "skills": [
     {
-      "name": "Languages and Frameworks",
+      "name": "Photonics & Lab",
+      "keywords": [
+        "Optical setups",
+        "Instrument control and automation (Python, LabVIEW)",
+        "Data acquisition",
+        "System integration",
+        "Microfluidics",
+        "Wet lab work",
+        "Rapid prototyping (3D printing)"
+      ]
+    },
+    {
+      "name": "Programming",
       "keywords": [
         "C",
-        "C++",
-        "Python (Numpy, Pandas, Scikit, Pytorch, OpenCV)",
+        "Python (NumPy, Pandas, scikit-learn, PyTorch, OpenCV, FastAPI, Streamlit)",
         "Bash",
         "CUDA",
         "MPI",
@@ -71,28 +82,49 @@
       ]
     },
     {
-      "name": "Toolsets/OS",
+      "name": "Machine Learning & Data",
       "keywords": [
-        "MacOS",
-        "Linux",
-        "Git"
+        "Machine learning",
+        "Computer vision",
+        "Time-series modeling",
+        "Generative models (diffusion, VAE)"
       ]
     },
     {
-      "name": "Hardware",
+      "name": "Simulation & Computing",
       "keywords": [
+        "Matlab",
+        "CST Studio",
+        "Slurm",
+        "Monte Carlo simulation"
+      ]
+    },
+    {
+      "name": "Robotics & Embedded",
+      "keywords": [
+        "Embedded systems",
+        "SLAM",
+        "Mobile robotics",
         "Arduino",
         "Raspberry Pi"
       ]
     },
     {
-      "name": "Software",
+      "name": "Tools",
       "keywords": [
-        "Matlab",
-        "LabVIEW",
-        "Catia",
-        "Microsoft Office",
-        "Docker"
+        "Linux",
+        "Git",
+        "Docker",
+        "CAD (CATIA, Solidworks)"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "keywords": [
+        "Team leadership",
+        "Budget management",
+        "Sponsorship",
+        "ISO quality management"
       ]
     },
     {
@@ -256,18 +288,20 @@
     {
       "company": "USC Lausanne",
       "position": "Vice President - Logistics & Finance",
-      "website": "https://usclausanne.ch",
+      "website": "https://usc-lausanne.github.io/Website/",
       "startDate": "2025-08-01",
       "endDate": "2026-02-01",
-      "summary": "Oversaw the budget of the EPFL & UNIL student surf association to ensure its financial health and sustainability. Managed member registrations and coordinated event logistics across water-sport and community activities."
+      "summary": "Oversaw the budget of the EPFL & UNIL student surf association to ensure its financial health and sustainability. Managed member registrations and coordinated event logistics across water-sport and community activities.",
+      "logo": "img/logos/usc.png"
     },
     {
       "company": "USC Lausanne",
       "position": "Sponsorship Manager",
-      "website": "https://usclausanne.ch",
+      "website": "https://usc-lausanne.github.io/Website/",
       "startDate": "2024-09-01",
       "endDate": "2025-08-01",
-      "summary": "Organized surf, pumpfoil, winch surf, and wakesurf sessions for EPFL & UNIL students. Managed partnerships and sponsorship acquisition to support the association's activities."
+      "summary": "Organized surf, pumpfoil, winch surf, and wakesurf sessions for EPFL & UNIL students. Managed partnerships and sponsorship acquisition to support the association's activities.",
+      "logo": "img/logos/usc.png"
     },
     {
       "company": "Forum CentraleSupélec",
