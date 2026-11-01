@@ -486,9 +486,9 @@ hr {
 .skills {
   display: grid;
   grid-template-columns: 200px 1fr;
-  gap: 0.75rem 2.2rem;
+  gap: 1.15rem 2.2rem;
   align-items: baseline;
-  max-width: 860px;
+  max-width: 960px;
   margin: 0 auto;
 }
 .skills__category {
@@ -498,7 +498,7 @@ hr {
 }
 @media (max-width: 640px) {
   .skills { grid-template-columns: 1fr; gap: 0.5rem 0; }
-  .skills__category { margin-top: 0.5rem; }
+  .skills__category { margin-top: 0.9rem; }
   .skills__category:first-child { margin-top: 0; }
 }
 
