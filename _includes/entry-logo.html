@@ -1,0 +1,5 @@
+{%- if include.logo -%}
+  <img class="entry__logo" src="{{ include.logo | relative_url }}" alt="" loading="lazy">
+{%- else -%}
+  <span class="entry__logo entry__logo--initial" aria-hidden="true">{{ include.name | slice: 0 }}</span>
+{%- endif -%}

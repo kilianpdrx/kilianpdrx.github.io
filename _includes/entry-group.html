@@ -3,6 +3,8 @@
 {% for group in groups %}
   {% assign first = group.items[0] %}
   <article class="entry">
+    {% include entry-logo.html logo=first.logo name=group.name %}
+    <div class="entry__content">
     <div class="entry__head">
       <h3 class="entry__org">{% if first.website %}<a href="{{ first.website }}" target="_blank" rel="noopener">{{ group.name }}</a>{% else %}{{ group.name }}{% endif %}</h3>
       {% if group.items.size == 1 %}
@@ -28,5 +30,6 @@
         {% endif %}
       </div>
     {% endfor %}
+    </div>
   </article>
 {% endfor %}

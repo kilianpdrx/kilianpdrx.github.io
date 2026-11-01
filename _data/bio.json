@@ -125,7 +125,8 @@
         "Structural biology",
         "Quantum computing",
         "Stochastic simulation"
-      ]
+      ],
+      "logo": "img/logos/epfl.svg"
     },
     {
       "institution": "CentraleSupélec – Université Paris-Saclay",
@@ -144,7 +145,8 @@
         "Signal processing",
         "Data science",
         "Finance and Economics"
-      ]
+      ],
+      "logo": "img/logos/centralesupelec.png"
     },
     {
       "institution": "Ecole Polytechnique Fédérale de Lausanne (EPFL)",
@@ -162,7 +164,8 @@
         "Programming",
         "Dynamical systems",
         "Structural mechanics"
-      ]
+      ],
+      "logo": "img/logos/epfl.svg"
     }
   ],
   "work": [
@@ -178,7 +181,8 @@
         "Design and build an automated free-space and fiber-based optical setup for the electro-optical characterization of laser devices",
         "Develop data analysis pipelines to process, visualize, and validate key laser performance metrics",
         "Simulate DFB laser behavior and compare it with measurements to assess grating and epitaxial design variations"
-      ]
+      ],
+      "logo": "img/logos/coherent.png"
     },
     {
       "company": "IMEC",
@@ -192,7 +196,8 @@
         "Designed and assembled an integrated optical and microfluidic setup, combining fluidic, electronic, and photonic components",
         "Developed data acquisition and processing pipelines to analyze and visualize cell sorting performance metrics",
         "Prepared biological samples and conducted wet lab experiments to characterize the chip's sorting performance"
-      ]
+      ],
+      "logo": "img/logos/imec.svg"
     },
     {
       "company": "Watchmaker (Mission Junior Entreprise EPFL)",
@@ -208,7 +213,8 @@
       "position": "Operator Intern",
       "startDate": "2023-07-01",
       "endDate": "2023-08-15",
-      "summary": "Discovered the operating environment of a vacuum-technology company by preparing orders for the shipping and production departments and handling inventory and delivery errors."
+      "summary": "Discovered the operating environment of a vacuum-technology company by preparing orders for the shipping and production departments and handling inventory and delivery errors.",
+      "logo": "img/logos/pfeiffer.svg"
     },
     {
       "company": "École Polytechnique Fédérale de Lausanne, EPFL",
@@ -216,7 +222,8 @@
       "position": "Teaching Assistant",
       "startDate": "2021-09-01",
       "endDate": "2026-02-01",
-      "summary": "Teaching assistant for several undergraduate courses including Materials Science, Programming,  Mathematics, and Information, Computation and Communication."
+      "summary": "Teaching assistant for several undergraduate courses including Materials Science, Programming,  Mathematics, and Information, Computation and Communication.",
+      "logo": "img/logos/epfl.svg"
     }
   ],
   "volunteer": [
@@ -231,7 +238,8 @@
         "Led a team of 8 to develop and operate ground stations for satellite communications.",
         "Developed and assembled an X-band antenna, the first student-operated system of its kind.",
         "Developed full-stack software for distributed antenna control and mission control."
-      ]
+      ],
+      "logo": "img/logos/spacecraft.png"
     },
     {
       "company": "EPFL Spacecraft Team",
@@ -242,7 +250,8 @@
       "highlights": [
         "Contributed to a digital twin for satellite modeling, enabling faster design iterations and performance optimization.",
         "Performed tradeoff analyses on critical satellite parameters, guiding key design decisions and improving mission reliability."
-      ]
+      ],
+      "logo": "img/logos/spacecraft.png"
     },
     {
       "company": "USC Lausanne",
@@ -266,7 +275,8 @@
       "website": "https://www.site.forum-cs.fr",
       "startDate": "2022-01-01",
       "endDate": "2024-01-01",
-      "summary": "Managed partner-company relations and event logistics for a major business forum with 200+ exhibitors and a €1.3M turnover, while handling quality management through the annual audit and ISO compliance. Developed automation algorithms to streamline repetitive tasks and improve team efficiency."
+      "summary": "Managed partner-company relations and event logistics for a major business forum with 200+ exhibitors and a €1.3M turnover, while handling quality management through the annual audit and ISO compliance. Developed automation algorithms to streamline repetitive tasks and improve team efficiency.",
+      "logo": "img/logos/forum.svg"
     }
   ]
 }
