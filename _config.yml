@@ -28,5 +28,3 @@ exclude:
 include:
   - .nojekyll
   - _data
-plugins:
-  - jekyll-gist
