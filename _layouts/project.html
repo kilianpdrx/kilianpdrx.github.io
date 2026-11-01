@@ -3,17 +3,17 @@ layout: home
 ---
 
 {%- comment -%} Format YYYY-MM strings as MM/YYYY and compute duration {%- endcomment -%}
-{%- assign _sp = page.start_date | split: "-" -%}
-{%- assign _start_fmt = _sp[1] | append: "/" | append: _sp[0] -%}
-{%- assign _start_total = _sp[0] | plus: 0 | times: 12 | plus: _sp[1] | plus: 0 -%}
+{%- assign start_parts = page.start_date | split: "-" -%}
+{%- assign start_label = start_parts[1] | append: "/" | append: start_parts[0] -%}
+{%- assign start_months = start_parts[0] | plus: 0 | times: 12 | plus: start_parts[1] | plus: 0 -%}
 
-{%- assign _end_fmt = "" -%}
+{%- assign end_label = "" -%}
 {%- assign duration_months = 0 -%}
 {%- if page.end_date and page.end_date != "Ongoing" -%}
-  {%- assign _ep = page.end_date | split: "-" -%}
-  {%- assign _end_fmt = _ep[1] | append: "/" | append: _ep[0] -%}
-  {%- assign _end_total = _ep[0] | plus: 0 | times: 12 | plus: _ep[1] | plus: 0 -%}
-  {%- assign duration_months = _end_total | minus: _start_total -%}
+  {%- assign end_parts = page.end_date | split: "-" -%}
+  {%- assign end_label = end_parts[1] | append: "/" | append: end_parts[0] -%}
+  {%- assign end_months = end_parts[0] | plus: 0 | times: 12 | plus: end_parts[1] | plus: 0 -%}
+  {%- assign duration_months = end_months | minus: start_months -%}
   {%- if duration_months < 1 -%}{%- assign duration_months = 1 -%}{%- endif -%}
 {%- endif -%}
 
@@ -27,14 +27,12 @@ layout: home
   <section class="project-overview" aria-label="Project overview">
     <h2 class="project-overview__title">Project Overview</h2>
     <dl class="project-overview__list">
-      {% if page.start_date %}
-        <div class="project-overview__row">
-          <dt>When</dt>
-          <dd>
-            {{ _start_fmt }}{% if page.end_date %} – {% if page.end_date == "Ongoing" %}Ongoing{% else %}{{ _end_fmt }}{% endif %}{% endif %}
-          </dd>
-        </div>
-      {% endif %}
+      <div class="project-overview__row">
+        <dt>When</dt>
+        <dd>
+          {{ start_label }}{% if page.end_date %} – {% if page.end_date == "Ongoing" %}Ongoing{% else %}{{ end_label }}{% endif %}{% endif %}
+        </dd>
+      </div>
       {% if duration_months > 0 %}
         <div class="project-overview__row">
           <dt>Duration</dt>

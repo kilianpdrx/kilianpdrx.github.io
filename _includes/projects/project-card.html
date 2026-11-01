@@ -1,13 +1,4 @@
-{%- assign p = include.page -%}
-{%- assign duration_months = 0 -%}
-{%- if p.start_date and p.end_date and p.end_date != "Ongoing" -%}
-  {%- assign _s = p.start_date | date: "%s" | plus: 0 -%}
-  {%- assign _e = p.end_date   | date: "%s" | plus: 0 -%}
-  {%- assign _diff = _e | minus: _s -%}
-  {%- assign duration_months = _diff | divided_by: 2629800 -%}
-  {%- if duration_months < 1 -%}{%- assign duration_months = 1 -%}{%- endif -%}
-{%- endif -%}
-
+{%- assign p = include.project -%}
 <a class="project-card" href="{{ site.baseurl }}{{ p.url }}">
   {% if p.image %}
     <div class="project-card__media">

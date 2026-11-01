@@ -35,11 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ '/css/site.css' | prepend: site.baseurl }}">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/css/rouge/{{ site.rouge-theme}}">
-
-    {% if site.mathjax %}
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML"></script>
-    {% endif %}
+    <link rel="stylesheet" href="{{ '/css/rouge/github.css' | prepend: site.baseurl }}">
 
     <title>{{ title }}</title>
   </head>

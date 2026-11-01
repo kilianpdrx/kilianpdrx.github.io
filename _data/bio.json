@@ -1,50 +1,106 @@
-
 {
   "basics": {
     "name": "Kilian Pouderoux",
     "label": "Student",
     "picture": "../img/foto.jpeg",
     "email": "kilian.pouderoux@epfl.ch",
-    "phone": "",
-    "website": "",
     "summary": "Final year Master’s student in Microengineering at EPFL and CentraleSupélec. With expertise in microsystems, nanotechnology, and computational science, I bring strong curiosity, organization, and autonomy to my work. I am eager to contribute to high-tech, fast-moving projects and am seeking a 6-month internship starting in February 2026.",
-    "location": { "address": "", "postalCode": "", "city": "Lausanne", "countryCode": "CH", "region": "" },
+    "location": {
+      "city": "Lausanne",
+      "countryCode": "CH"
+    },
     "profiles": [
-      { "network": "github", "username": "kilianpdrx", "url": "https://github.com/kilianpdrx" },
-      { "network": "linkedin", "username": "Kilian Pouderoux", "url": "https://www.linkedin.com/in/kilian-pouderoux-502184248/" }
+      {
+        "network": "github",
+        "username": "kilianpdrx",
+        "url": "https://github.com/kilianpdrx"
+      },
+      {
+        "network": "linkedin",
+        "username": "Kilian Pouderoux",
+        "url": "https://www.linkedin.com/in/kilian-pouderoux-502184248/"
+      }
     ]
   },
+  "interestsIntro": [
+    "My technical expertise lies at the intersection of microsystems, optics and intelligent software. From developing ground station architecture for CubeSat missions to designing microfluidic platforms at IMEC, I thrive on bridging the gap between embedded hardware and high performance computing. I am particularly driven by the challenge of building high-impact systems in multidisciplinary environments.",
+    "Outside of engineering, I’m deeply curious about the broader scientific landscape, especially astronomy and the mechanics of space exploration. Sport addict, I spend most of my free time on the water, improving my kitesurfing and pumpfoiling skills."
+  ],
   "interests": [
-    { "name": "Optics" },
-    { "name": "Computational science" },
-    { "name": "Semi conductors" },
-    { "name": "Nanotechnologies" },
-    { "name": "Artificial Intelligence" },
-    { "name": "Quantum Computing" },
-    { "name": "Robotics" },
-    { "name": "Machine Learning" },
-    { "name": "Astronomy" }
+    {
+      "name": "Optics"
+    },
+    {
+      "name": "Computational science"
+    },
+    {
+      "name": "Semi conductors"
+    },
+    {
+      "name": "Nanotechnologies"
+    },
+    {
+      "name": "Artificial Intelligence"
+    },
+    {
+      "name": "Quantum Computing"
+    },
+    {
+      "name": "Robotics"
+    },
+    {
+      "name": "Machine Learning"
+    },
+    {
+      "name": "Astronomy"
+    }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Python (Numpy, Pandas, Scikit, Pytorch, OpenCV)", "Bash", "CUDA", "MPI", "Bash", "SQL"]
+      "keywords": [
+        "C",
+        "C++",
+        "Python (Numpy, Pandas, Scikit, Pytorch, OpenCV)",
+        "Bash",
+        "CUDA",
+        "MPI",
+        "Bash",
+        "SQL"
+      ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Linux", "Git" ]
+      "keywords": [
+        "MacOS",
+        "Linux",
+        "Git"
+      ]
     },
     {
       "name": "Hardware",
-      "keywords": [ "Arduino", "Raspberry Pi" ]
+      "keywords": [
+        "Arduino",
+        "Raspberry Pi"
+      ]
     },
     {
       "name": "Software",
-      "keywords": [ "Matlab", "LabView", "Catia", "Microsoft Office", "Docker"]
+      "keywords": [
+        "Matlab",
+        "LabView",
+        "Catia",
+        "Microsoft Office",
+        "Docker"
+      ]
     },
     {
       "name": "Languages",
-      "keywords": [ "French (native)", "English (C1)", "Italian (A2)" ]
+      "keywords": [
+        "French (native)",
+        "English (C1)",
+        "Italian (A2)"
+      ]
     }
   ],
   "education": [
@@ -104,7 +160,7 @@
         "Fluid mechanics",
         "Programming",
         "Dynamical systems",
-        "Structural mechanics"  
+        "Structural mechanics"
       ]
     }
   ],
@@ -127,31 +183,25 @@
       "company": "Watchmaker (Mission Junior Entreprise EPFL)",
       "location": "Geneva, Switzerland",
       "position": "Maintenance Engineer",
-      "website": "",
       "startDate": "2025-03-01",
       "endDate": "2025-05-01",
-      "summary": "Diagnosing, maintaining, and optimizing a LabVIEW-based machine in a high-precision manufacturing environment.",
-      "highlights": []
+      "summary": "Diagnosing, maintaining, and optimizing a LabVIEW-based machine in a high-precision manufacturing environment."
     },
     {
       "company": "Pfeiffer Vacuum",
       "location": "Annecy, France",
       "position": "Operator Intern",
-      "website": "",
       "startDate": "2023-07-01",
       "endDate": "2023-08-15",
-      "summary": "Discovered the operating environment of a vacuum-technology company by preparing orders for the shipping and production departments and handling inventory and delivery errors.",
-      "highlights": []
+      "summary": "Discovered the operating environment of a vacuum-technology company by preparing orders for the shipping and production departments and handling inventory and delivery errors."
     },
     {
       "company": "École Polytechnique Fédérale de Lausanne, EPFL",
       "location": "Lausanne, Switzerland",
       "position": "Teaching Assistant",
-      "website": "",
       "startDate": "2021-09-01",
       "endDate": "2026-02-01",
-      "summary": "Teaching assistant for several undergraduate courses including Materials Science, Programming,  Mathematics, and Information, Computation and Communication.",
-      "highlights": []
+      "summary": "Teaching assistant for several undergraduate courses including Materials Science, Programming,  Mathematics, and Information, Computation and Communication."
     }
   ],
   "volunteer": [
@@ -174,7 +224,6 @@
       "website": "https://www.epflspacecraftteam.ch",
       "startDate": "2024-09-01",
       "endDate": "2025-08-01",
-      "summary": "",
       "highlights": [
         "Contribute to a digital twin for satellite modeling, enabling faster design iterations and performance optimization.",
         "Perform tradeoff analyses on critical satellite parameters, guiding key design decisions and improving mission reliability."
@@ -186,8 +235,7 @@
       "website": "https://usclausanne.ch",
       "startDate": "2025-08-01",
       "endDate": "2026-02-01",
-      "summary": "Oversee the budget of the EPFL & UNIL student surf association to ensure its financial health and sustainability. Manage member registrations and coordinate event logistics across water-sport and community activities.",
-      "highlights": []
+      "summary": "Oversee the budget of the EPFL & UNIL student surf association to ensure its financial health and sustainability. Manage member registrations and coordinate event logistics across water-sport and community activities."
     },
     {
       "company": "USC Lausanne",
@@ -195,8 +243,7 @@
       "website": "https://usclausanne.ch",
       "startDate": "2024-09-01",
       "endDate": "2025-08-01",
-      "summary": "Organized surf, pumpfoil, winch surf, and wakesurf sessions for EPFL & UNIL students. Managed partnerships and sponsorship acquisition to support the association's activities.",
-      "highlights": []
+      "summary": "Organized surf, pumpfoil, winch surf, and wakesurf sessions for EPFL & UNIL students. Managed partnerships and sponsorship acquisition to support the association's activities."
     },
     {
       "company": "Forum CentraleSupélec",
@@ -204,31 +251,7 @@
       "website": "https://www.site.forum-cs.fr",
       "startDate": "2022-01-01",
       "endDate": "2024-01-01",
-      "summary": "Managed partner-company relations and event logistics for a major business forum with 200+ exhibitors and a €1.3M turnover, while handling quality management through the annual audit and ISO compliance. Developed automation algorithms to streamline repetitive tasks and improve team efficiency.",
-      "highlights": []
-    }
-
-
-
-    
-  ],
-  "awards": [
-    {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
-    },
-    {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
-    }
-  ],
-  "references": [
-    {
-      "name": "Available upon request"
+      "summary": "Managed partner-company relations and event logistics for a major business forum with 200+ exhibitors and a €1.3M turnover, while handling quality management through the annual audit and ISO compliance. Developed automation algorithms to streamline repetitive tasks and improve team efficiency."
     }
   ]
 }

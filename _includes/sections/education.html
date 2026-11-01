@@ -1,0 +1,21 @@
+<section id="education" class="section">
+  <div class="container">
+    <h2 class="section__title">Education</h2>
+    <div class="entries">
+      {% for school in site.data.bio.education %}
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__org"><a href="{{ school.website }}" target="_blank" rel="noopener">{{ school.institution }}</a></h3>
+            {% include date-range.html start=school.startDate end=school.endDate %}
+          </div>
+          <p class="entry__location">{{ school.location }}</p>
+          <p class="entry__position">{{ school.studyType }}, {{ school.area }}</p>
+          <details class="courses">
+            <summary>Key courses ({{ school.courses.size }})</summary>
+            <ul>{% for course in school.courses %}<li>{{ course }}</li>{% endfor %}</ul>
+          </details>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
