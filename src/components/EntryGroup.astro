@@ -1,0 +1,41 @@
+---
+import EntryLogo from './EntryLogo.astro';
+import type { Entry } from '../lib/bio';
+import { dateRange, groupByCompany } from '../lib/format';
+
+interface Props {
+  entries: Entry[];
+}
+
+const groups = groupByCompany(Astro.props.entries);
+---
+<div class="entries">
+  {groups.map(({ name, first, roles }) => (
+    <article class="entry">
+      <EntryLogo logo={first.logo} name={name} />
+      <div>
+        <div class="entry__head">
+          <h3 class="entry__org">
+            {first.website ? <a href={first.website} target="_blank" rel="noopener">{name}</a> : name}
+          </h3>
+          {roles.length === 1 && <span class="entry__date">{dateRange(first.startDate, first.endDate)}</span>}
+        </div>
+        {first.location && <p class="entry__location">{first.location}</p>}
+        {roles.map((role) => (
+          <div class="entry__role">
+            <div class="entry__role-head">
+              <span class="entry__position">{role.position}</span>
+              {roles.length > 1 && <span class="entry__date">{dateRange(role.startDate, role.endDate)}</span>}
+            </div>
+            {role.summary && <p class="entry__summary">{role.summary}</p>}
+            {role.highlights && (
+              <ul class="entry__highlights">
+                {role.highlights.map((highlight) => <li>{highlight}</li>)}
+              </ul>
+            )}
+          </div>
+        ))}
+      </div>
+    </article>
+  ))}
+</div>

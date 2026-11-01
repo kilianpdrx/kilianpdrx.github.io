@@ -1,7 +1,53 @@
 ---
+import Education from '../components/Education.astro';
+import EntryGroup from '../components/EntryGroup.astro';
+import ProjectList from '../components/ProjectList.astro';
+import Section from '../components/Section.astro';
 import Shell from '../layouts/Shell.astro';
 import { bio } from '../lib/bio';
 ---
 <Shell path="/" isHome>
-  <section id="about" class="lead" aria-label="About"><p>{bio.basics.summary}</p></section>
+  <section id="about" class="lead" aria-label="About">
+    <p>{bio.basics.summary}</p>
+  </section>
+
+  <Section id="experience" title="Experience">
+    <EntryGroup entries={bio.work} />
+  </Section>
+
+  <Section id="projects" title="Projects">
+    <ProjectList />
+  </Section>
+
+  <Section id="education" title="Education">
+    <Education />
+  </Section>
+
+  <Section id="volunteer" title="Associations">
+    <EntryGroup entries={bio.volunteer} />
+  </Section>
+
+  <Section id="skills" title="Skills">
+    <dl class="skills">
+      {bio.skills.map((skill) => (
+        <div>
+          <dt>{skill.name}</dt>
+          <dd>
+            <ul class="pills">
+              {skill.keywords.map((keyword) => <li class="pill">{keyword}</li>)}
+            </ul>
+          </dd>
+        </div>
+      ))}
+    </dl>
+  </Section>
+
+  <Section id="interests" title="Interests">
+    <div class="stack">
+      {bio.interestsIntro.map((paragraph) => <p>{paragraph}</p>)}
+      <ul class="pills">
+        {bio.interests.map((interest) => <li class="pill pill--accent">{interest.name}</li>)}
+      </ul>
+    </div>
+  </Section>
 </Shell>

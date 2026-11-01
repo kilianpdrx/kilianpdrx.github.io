@@ -1,0 +1,18 @@
+---
+import { byNewest, getPublishedProjects, projectPath } from '../lib/projects';
+
+const projects = (await getPublishedProjects()).sort(byNewest);
+---
+<ul>
+  {projects.map(({ id, data }) => (
+    <li class="project-row">
+      <img class="project-row__image" src={`/${data.image}`} alt="" loading="lazy">
+      <div>
+        <h3 class="project-row__title"><a href={projectPath(id)}>{data.title}</a></h3>
+        {data.period && <p class="project-row__period">{data.period}</p>}
+        {data.summary && <p class="project-row__summary">{data.summary}</p>}
+        {data.labels.length > 0 && <p class="project-row__labels">{data.labels.join(' · ')}</p>}
+      </div>
+    </li>
+  ))}
+</ul>

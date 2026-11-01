@@ -1,0 +1,11 @@
+---
+interface Props {
+  logo?: string;
+  name: string;
+}
+
+const { logo, name } = Astro.props;
+---
+{logo
+  ? <img class="logo-tile" src={`/${logo}`} alt="" loading="lazy">
+  : <span class="logo-tile logo-tile--initial" aria-hidden="true">{name.slice(0, 1)}</span>}
