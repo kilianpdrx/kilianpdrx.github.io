@@ -1,5 +1,0 @@
-<span class="entry__date">
-  {%- if include.start %}{{ include.start | date: "%b %Y" }}{% endif -%}
-  {%- if include.start and include.end %} – {% endif -%}
-  {%- if include.end == "Present" %}Present{% elsif include.end %}{{ include.end | date: "%b %Y" }}{% endif -%}
-</span>

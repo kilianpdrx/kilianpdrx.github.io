@@ -1,18 +1,31 @@
 # Kilian Pouderoux: portfolio
 
-Personal portfolio built with Jekyll and published at https://kilianpdrx.github.io. Pushing to `main` deploys it through GitHub Actions.
+Personal portfolio built with [Astro](https://astro.build) and published at https://kilianpdrx.github.io. Pushing to `main` deploys it through GitHub Actions.
 
 ## Run locally
 
 ```bash
-bundle install
-bundle exec jekyll serve
+npm install
+npm run dev
 ```
 
-The Ruby version is set in `.ruby-version`.
+The Node version is set in `.nvmrc`.
+
+To check a production build the same way the deploy does:
+
+```bash
+npm run build
+npm run check:dist
+```
 
 ## Edit the content
 
-- Profile, education, experience and skills: `_data/bio.json`
-- Projects: one Markdown file per project in `projects/`. Set `published: false` to hide a project.
-- Resume: replace `assets/Pouderoux_Kilian_EN.pdf`
+- Profile, education, experience and skills: `src/data/bio.json`
+- Projects: one Markdown file per project in `src/content/projects/`. Set `published: false` to hide a project.
+- Images: `public/img/`
+- Resume: replace `public/assets/Pouderoux_Kilian_EN.pdf`
+- Colours and fonts: `src/styles/tokens.css`
+
+## Credits
+
+Icons come from [Bootstrap Icons](https://icons.getbootstrap.com) (MIT License).
