@@ -25,6 +25,8 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - LICENSE.md
+  - TODO.txt
 include:
   - .nojekyll
   - _data
