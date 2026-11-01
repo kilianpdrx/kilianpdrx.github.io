@@ -1,0 +1,25 @@
+---
+import Footer from '../components/Footer.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Base from './Base.astro';
+
+interface Props {
+  path: string;
+  title?: string;
+  description?: string;
+  isHome?: boolean;
+  current?: string;
+}
+
+const { isHome, current, ...meta } = Astro.props;
+---
+<Base {...meta}>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="layout">
+    <Sidebar isHome={isHome} current={current} />
+    <div class="content">
+      <main id="main"><slot /></main>
+      <Footer />
+    </div>
+  </div>
+</Base>

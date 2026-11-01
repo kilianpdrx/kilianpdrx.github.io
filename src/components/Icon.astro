@@ -1,0 +1,8 @@
+---
+interface Props {
+  name: 'envelope' | 'file-earmark-text' | 'github' | 'linkedin';
+}
+
+const { name } = Astro.props;
+---
+<svg class="icon" aria-hidden="true"><use href={`/img/icons.svg#${name}`}></use></svg>

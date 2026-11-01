@@ -1,3 +1,7 @@
 ---
+import Shell from '../layouts/Shell.astro';
+import { bio } from '../lib/bio';
 ---
-<html lang="en"><head><title>Kilian Pouderoux</title></head><body><h1>Kilian Pouderoux</h1></body></html>
+<Shell path="/" isHome>
+  <section id="about" class="lead" aria-label="About"><p>{bio.basics.summary}</p></section>
+</Shell>

@@ -1,0 +1,76 @@
+---
+import Icon from './Icon.astro';
+import { bio } from '../lib/bio';
+import { RESUME_PATH } from '../lib/site';
+
+interface Props {
+  isHome?: boolean;
+  current?: string;
+}
+
+const { isHome = false, current } = Astro.props;
+const { name, label, email, location, profiles } = bio.basics;
+const Name = isHome ? 'h1' : 'p';
+
+const NAV = [
+  { id: 'experience', label: 'Experience' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'education', label: 'Education' },
+  { id: 'volunteer', label: 'Associations' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'interests', label: 'Interests' },
+];
+---
+<header class="sidebar">
+  <div class="sidebar__identity">
+    <img class="sidebar__photo" src="/img/foto-320.jpg" alt={`Portrait of ${name}`} width="320" height="316">
+    <div>
+      <Name class="sidebar__name"><a href="/">{name}</a></Name>
+      <p class="sidebar__tagline">{label} · {location.city}, {location.countryCode}</p>
+    </div>
+  </div>
+
+  <nav class="sidebar__nav" aria-label="Sections" data-nav>
+    <ul>
+      {NAV.map((item) => (
+        <li>
+          <a href={`/#${item.id}`} aria-current={current === item.id ? 'true' : undefined}>{item.label}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+
+  <div class="sidebar__links">
+    <a href={RESUME_PATH} target="_blank" rel="noopener"><Icon name="file-earmark-text" /> Resume PDF</a>
+    <a href={`mailto:${email}`}><Icon name="envelope" /> Email</a>
+    {profiles.map((profile) => (
+      <a href={profile.url} target="_blank" rel="noopener"><Icon name={profile.network} /> {profile.label}</a>
+    ))}
+  </div>
+</header>
+
+<script>
+  const links = new Map(
+    [...document.querySelectorAll<HTMLAnchorElement>('[data-nav] a')].map((link) => [link.hash.slice(1), link]),
+  );
+  const sections = [...links.keys()].flatMap((id) => document.getElementById(id) ?? []);
+
+  const setActive = (id: string) =>
+    links.forEach((link, key) =>
+      key === id ? link.setAttribute('aria-current', 'location') : link.removeAttribute('aria-current'),
+    );
+
+  if (sections.length) {
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach((entry) => entry.isIntersecting && setActive(entry.target.id)),
+      { rootMargin: '-20% 0px -75% 0px' },
+    );
+    sections.forEach((section) => observer.observe(section));
+
+    // The last section can be too short to ever reach that band
+    const last = sections[sections.length - 1];
+    new IntersectionObserver(([entry]) => entry.isIntersecting && setActive(last.id)).observe(
+      document.querySelector('.footer')!,
+    );
+  }
+</script>

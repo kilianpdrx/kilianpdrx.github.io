@@ -1,0 +1,41 @@
+---
+import { Font } from 'astro:assets';
+import { bio } from '../lib/bio';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../lib/site';
+import '../styles/tokens.css';
+import '../styles/global.css';
+
+interface Props {
+  path: string;
+  title?: string;
+  description?: string;
+}
+
+const { path, title, description = SITE_DESCRIPTION } = Astro.props;
+const fullTitle = title ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
+const url = new URL(path, Astro.site).href;
+const image = new URL(bio.basics.picture, Astro.site).href;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{fullTitle}</title>
+    <meta name="title" content={fullTitle}>
+    <meta name="description" content={description}>
+    <meta name="image" content={image}>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content={SITE_TITLE}>
+    <meta property="og:url" content={url}>
+    <meta property="og:title" content={fullTitle}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content={image}>
+    <link rel="icon" href="/favicon.ico">
+    <Font cssVariable="--font-inter" preload />
+    <Font cssVariable="--font-source-serif" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

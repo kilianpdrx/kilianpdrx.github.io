@@ -1,0 +1,15 @@
+---
+import Icon from './Icon.astro';
+import { bio } from '../lib/bio';
+
+const { name, email, profiles } = bio.basics;
+---
+<footer class="footer">
+  <p>&copy; {new Date().getFullYear()} {name}</p>
+  <div class="footer__links">
+    <a href={`mailto:${email}`} aria-label="Email"><Icon name="envelope" /></a>
+    {profiles.map((profile) => (
+      <a href={profile.url} target="_blank" rel="noopener" aria-label={profile.label}><Icon name={profile.network} /></a>
+    ))}
+  </div>
+</footer>
