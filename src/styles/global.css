@@ -320,7 +320,6 @@ a:hover {
 /* Projects ----------------------------------------------------------------- */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
   gap: 1.25rem;
 }
 
@@ -606,6 +605,10 @@ html:has(.project-dialog[open]) {
 
 /* Layout ------------------------------------------------------------------- */
 @media (min-width: 40rem) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .skills > div {
     display: grid;
     grid-template-columns: 11rem minmax(0, 1fr);
@@ -692,6 +695,12 @@ html:has(.project-dialog[open]) {
 
   .footer__links {
     display: none;
+  }
+}
+
+@media (min-width: 72rem) {
+  .project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
