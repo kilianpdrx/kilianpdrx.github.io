@@ -1,6 +1,7 @@
 title: Kilian Pouderoux | Professional Portfolio
 url: "https://kilianpdrx.github.io"
 baseurl: ""
+description: "Portfolio of Kilian Pouderoux, Microengineering Master's student at EPFL and CentraleSupélec working on optics, photonics and microsystems."
 
 markdown: kramdown
 kramdown:

@@ -2,7 +2,7 @@
   "basics": {
     "name": "Kilian Pouderoux",
     "label": "Student",
-    "picture": "../img/foto.jpeg",
+    "picture": "/img/foto.jpeg",
     "email": "kilian.pouderoux@epfl.ch",
     "summary": "Final year Master’s student in Microengineering at EPFL and CentraleSupélec. With expertise in microsystems, nanotechnology, and computational science, I bring strong curiosity, organization, and autonomy to my work. I am eager to contribute to high-tech, fast-moving projects and am seeking a 6-month internship starting in February 2026.",
     "location": {
@@ -34,7 +34,7 @@
       "name": "Computational science"
     },
     {
-      "name": "Semi conductors"
+      "name": "Semiconductors"
     },
     {
       "name": "Nanotechnologies"
@@ -65,7 +65,6 @@
         "Bash",
         "CUDA",
         "MPI",
-        "Bash",
         "SQL"
       ]
     },
@@ -88,7 +87,7 @@
       "name": "Software",
       "keywords": [
         "Matlab",
-        "LabView",
+        "LabVIEW",
         "Catia",
         "Microsoft Office",
         "Docker"

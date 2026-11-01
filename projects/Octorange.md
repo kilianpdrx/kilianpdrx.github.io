@@ -10,7 +10,7 @@ labels:
   - Catia
   - 3D modelisation
   - Mechanical design
-summary: "Design and modeling of a multi-orange press mechanism using Catiat"
+summary: "Design and modeling of a multi-orange press mechanism using Catia"
 period: EPFL Bachelor
 ---
 <div class="container py-3">

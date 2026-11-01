@@ -1,17 +1,10 @@
-{%- assign url = '/' | prepend: site.baseurl | prepend: site.url -%}
+{%- assign url = page.url | absolute_url -%}
+{%- assign image = site.data.bio.basics.picture | absolute_url -%}
 {%- assign title = site.title -%}
-{%- assign description = site.description -%}
+{%- assign description = page.summary | default: site.description -%}
 
-{%- if page.url != '/' -%}
-  {%- if page.url -%}
-    {%- assign url = page.url | prepend: site.baseurl | prepend: site.url -%}
-  {%- endif -%}
-  {%- if page.title -%}
-    {%- assign title = page.title | append: ' | ' | append: site.title  -%}
-  {%- endif -%}
-  {%- if page.description -%}
-    {%- assign description = page.description -%}
-  {%- endif -%}
+{%- if page.url != '/' and page.title -%}
+  {%- assign title = page.title | append: ' | ' | append: site.title -%}
 {%- endif -%}
 
 <!doctype html>
@@ -21,13 +14,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="{{ title | xml_escape }}">
     <meta name="description" content="{{ description | xml_escape }}">
-    <meta name="image" content="{{ site.data.bio.basics.picture }}">
+    <meta name="image" content="{{ image }}">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{ site.title | xml_escape }}">
     <meta property="og:url" content="{{ url }}">
     <meta property="og:title" content="{{ title | xml_escape }}">
     <meta property="og:description" content="{{ description | xml_escape }}">
-    <meta property="og:image" content="{{ site.data.bio.basics.picture }}">
+    <meta property="og:image" content="{{ image }}">
     <link rel="shortcut icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

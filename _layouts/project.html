@@ -13,8 +13,7 @@ layout: home
   {%- assign end_parts = page.end_date | split: "-" -%}
   {%- assign end_label = end_parts[1] | append: "/" | append: end_parts[0] -%}
   {%- assign end_months = end_parts[0] | plus: 0 | times: 12 | plus: end_parts[1] | plus: 0 -%}
-  {%- assign duration_months = end_months | minus: start_months -%}
-  {%- if duration_months < 1 -%}{%- assign duration_months = 1 -%}{%- endif -%}
+  {%- assign duration_months = end_months | minus: start_months | plus: 1 -%}
 {%- endif -%}
 
 <article class="project-page">

@@ -12,7 +12,7 @@ labels:
   - Statistics
   - Monte Carlo simulations
   - Machine Learning
-summary: "Data analysis and development of prediction models for catenary litfing"
+summary: "Data analysis and development of prediction models for catenary lifting"
 period: CentraleSupélec
 ---
 

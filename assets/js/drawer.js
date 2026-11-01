@@ -15,7 +15,7 @@
   const metaEl   = drawer.querySelector('.drawer__meta');
 
   let previousFocus = null;
-  let cache = new Map();
+  const cache = new Map();
 
   function open() {
     drawer.setAttribute('aria-hidden', 'false');
@@ -39,13 +39,29 @@
     }, 400);
   }
 
+  // Keep Tab cycling inside the panel while the drawer is open
+  function trapFocus(e) {
+    const focusable = [...panel.querySelectorAll('a[href], button, summary, iframe')]
+      .filter(el => el.getClientRects().length > 0);
+    const first = focusable[0];
+    const last  = focusable[focusable.length - 1];
+    const active = document.activeElement;
+
+    if (!panel.contains(active) || (e.shiftKey && active === first)) {
+      e.preventDefault();
+      (e.shiftKey ? last : first).focus();
+    } else if (!e.shiftKey && active === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
+
   async function loadProject(url, card) {
     // Prime header immediately from card metadata
     const cardTitle  = card?.querySelector('.project-card__title')?.textContent?.trim() || '';
-    const cardDate   = card?.querySelector('.project-card__date')?.textContent?.trim() || '';
     const cardPeriod = card?.querySelector('.project-card__period')?.textContent?.trim() || '';
     titleEl.textContent = cardTitle;
-    metaEl.textContent  = [cardDate, cardPeriod].filter(Boolean).join(' · ');
+    metaEl.textContent  = cardPeriod;
     body.innerHTML = '<div class="drawer__loading">Loading…</div>';
     panel.scrollTop = 0;
     open();
@@ -99,6 +115,8 @@
   closeBtn.addEventListener('click', close);
   backdrop.addEventListener('click', close);
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && drawer.getAttribute('aria-hidden') === 'false') close();
+    if (drawer.getAttribute('aria-hidden') !== 'false') return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'Tab') trapFocus(e);
   });
 })();
