@@ -1,7 +1,7 @@
 ---
 import Education from '../components/Education.astro';
 import EntryGroup from '../components/EntryGroup.astro';
-import ProjectList from '../components/ProjectList.astro';
+import ProjectGrid from '../components/ProjectGrid.astro';
 import Section from '../components/Section.astro';
 import Shell from '../layouts/Shell.astro';
 import { bio } from '../lib/bio';
@@ -11,12 +11,21 @@ import { bio } from '../lib/bio';
     <p>{bio.basics.summary}</p>
   </section>
 
+  <Section id="interests" title="Interests">
+    <div class="stack">
+      {bio.interestsIntro.map((paragraph) => <p>{paragraph}</p>)}
+      <ul class="pills">
+        {bio.interests.map((interest) => <li class="pill pill--accent">{interest.name}</li>)}
+      </ul>
+    </div>
+  </Section>
+
   <Section id="experience" title="Experience">
     <EntryGroup entries={bio.work} />
   </Section>
 
   <Section id="projects" title="Projects">
-    <ProjectList />
+    <ProjectGrid />
   </Section>
 
   <Section id="education" title="Education">
@@ -40,14 +49,5 @@ import { bio } from '../lib/bio';
         </div>
       ))}
     </dl>
-  </Section>
-
-  <Section id="interests" title="Interests">
-    <div class="stack">
-      {bio.interestsIntro.map((paragraph) => <p>{paragraph}</p>)}
-      <ul class="pills">
-        {bio.interests.map((interest) => <li class="pill pill--accent">{interest.name}</li>)}
-      </ul>
-    </div>
   </Section>
 </Shell>

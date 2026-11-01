@@ -318,64 +318,140 @@ a:hover {
 }
 
 /* Projects ----------------------------------------------------------------- */
-.project-row {
-  position: relative;
+.project-grid {
   display: grid;
-  grid-template-columns: 5.5rem minmax(0, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
   gap: 1.25rem;
-  padding-block: 1.25rem;
-  border-top: 1px solid var(--line);
 }
 
-.project-row:first-child {
-  padding-top: 0;
-  border-top: 0;
-}
-
-.project-row__image {
-  width: 5.5rem;
-  height: 5.5rem;
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  border-color: var(--accent);
+}
+
+.project-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  padding: 0.75rem;
   object-fit: contain;
   background: var(--media-bg);
 }
 
-.project-row__title {
+.project-card__body {
+  padding: 0.875rem 1rem 1rem;
+}
+
+.project-card__title {
   font-size: var(--text-lg);
   font-weight: 600;
   line-height: 1.35;
 }
 
-.project-row__title a {
+.project-card__title a {
   color: var(--text);
   text-decoration: none;
 }
 
-.project-row__title a::after {
+.project-card__title a::after {
   content: '';
   position: absolute;
   inset: 0;
 }
 
-.project-row:hover .project-row__title a {
+.project-card:hover .project-card__title a {
   color: var(--accent);
-  text-decoration: underline;
 }
 
-.project-row__period,
-.project-row__labels {
+.project-card__period,
+.project-card__labels {
   color: var(--muted);
   font-size: var(--text-sm);
 }
 
-.project-row__summary {
+.project-card__summary {
   margin-top: 0.25rem;
   color: var(--muted);
 }
 
-.project-row__labels {
+.project-card__labels {
   margin-top: 0.375rem;
+}
+
+/* Project pop-up ------------------------------------------------------------ */
+html:has(.project-dialog[open]) {
+  overflow: hidden;
+}
+
+.project-dialog {
+  width: min(60rem, 100vw - 2rem);
+  max-width: none;
+  max-height: calc(100dvh - 2rem);
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.project-dialog::backdrop {
+  background: var(--backdrop);
+}
+
+.project-dialog__bar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  height: 0;
+  padding-inline: 0.75rem;
+}
+
+.project-dialog__close {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--text);
+  font-size: var(--text-xl);
+  line-height: 1;
+  cursor: pointer;
+}
+
+.project-dialog__close:hover {
+  color: var(--accent);
+}
+
+.project-dialog__body {
+  padding: 2rem clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.project-dialog__body h1 {
+  margin-top: 0;
+  padding-right: 3rem;
+}
+
+.project-dialog__body .project__back {
+  display: none;
+}
+
+.project-dialog__status {
+  color: var(--muted);
 }
 
 /* Skills and interests ------------------------------------------------------ */
@@ -550,10 +626,9 @@ a:hover {
 @media (min-width: 60rem) {
   .layout {
     display: grid;
-    grid-template-columns: var(--sidebar-width) minmax(0, var(--content-width));
-    gap: 4rem;
-    justify-content: center;
-    padding-inline: 2rem;
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+    gap: 3rem;
+    padding-inline: 2.5rem;
   }
 
   .sidebar {
@@ -609,11 +684,24 @@ a:hover {
   }
 
   .content {
+    width: 100%;
+    max-width: var(--content-width);
+    margin-inline: auto;
     padding-block: 3.5rem 0;
   }
 
   .footer__links {
     display: none;
+  }
+}
+
+@media (max-width: 39.99rem) {
+  .project-dialog {
+    width: 100%;
+    max-height: 100dvh;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
   }
 }
 

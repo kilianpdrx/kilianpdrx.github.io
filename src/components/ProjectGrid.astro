@@ -1,0 +1,89 @@
+---
+import { byNewest, getPublishedProjects, projectPath } from '../lib/projects';
+
+const projects = (await getPublishedProjects()).sort(byNewest);
+---
+<ul class="project-grid">
+  {projects.map(({ id, data }) => (
+    <li class="project-card">
+      <img class="project-card__image" src={`/${data.image}`} alt="" loading="lazy">
+      <div class="project-card__body">
+        <h3 class="project-card__title"><a href={projectPath(id)} data-project>{data.title}</a></h3>
+        {data.period && <p class="project-card__period">{data.period}</p>}
+        {data.summary && <p class="project-card__summary">{data.summary}</p>}
+        {data.labels.length > 0 && <p class="project-card__labels">{data.labels.join(' · ')}</p>}
+      </div>
+    </li>
+  ))}
+</ul>
+
+<dialog class="project-dialog" id="project-dialog" aria-label="Project details">
+  <div class="project-dialog__bar">
+    <button class="project-dialog__close" type="button" aria-label="Close project">&times;</button>
+  </div>
+  <div class="project-dialog__body"></div>
+</dialog>
+
+<script>
+  // Cards are real links, so the full project pages still work without JavaScript
+  const dialog = document.querySelector<HTMLDialogElement>('#project-dialog')!;
+  const body = dialog.querySelector('.project-dialog__body')!;
+  const pageTitle = document.title;
+  const pages = new Map<string, string>();
+  let latest = 0;
+
+  async function loadPage(url: string) {
+    if (!pages.has(url)) {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      pages.set(url, await response.text());
+    }
+    return new DOMParser().parseFromString(pages.get(url)!, 'text/html');
+  }
+
+  async function showProject(url: string) {
+    const request = ++latest;
+    body.innerHTML = '<p class="project-dialog__status" role="status">Loading…</p>';
+    if (!dialog.open) dialog.showModal();
+    dialog.scrollTop = 0;
+
+    try {
+      const page = await loadPage(url);
+      const article = page.querySelector('.project');
+      if (!article) throw new Error('Project content not found');
+      if (request !== latest || !dialog.open) return;
+      document.title = page.title;
+      dialog.setAttribute('aria-label', article.querySelector('h1')?.textContent ?? 'Project');
+      body.replaceChildren(article);
+    } catch {
+      if (request === latest) location.assign(url);
+    }
+  }
+
+  document.addEventListener('click', (event) => {
+    const link = (event.target as Element).closest<HTMLAnchorElement>('a[data-project]');
+    if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    // The address changes too, so a project can be shared and Back closes it
+    history.pushState({ project: true }, '', link.href);
+    showProject(link.href);
+  });
+
+  dialog.querySelector('.project-dialog__close')!.addEventListener('click', () => dialog.close());
+
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+
+  dialog.addEventListener('close', () => {
+    latest++;
+    body.replaceChildren();
+    document.title = pageTitle;
+    if (history.state?.project) history.back();
+  });
+
+  window.addEventListener('popstate', () => {
+    if (history.state?.project) showProject(location.href);
+    else if (dialog.open) dialog.close();
+  });
+</script>
