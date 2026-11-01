@@ -1,0 +1,40 @@
+---
+import { render } from 'astro:content';
+import Shell from '../../layouts/Shell.astro';
+import { projectDuration, projectWhen } from '../../lib/format';
+import { getPublishedProjects, projectPath } from '../../lib/projects';
+
+export async function getStaticPaths() {
+  const projects = await getPublishedProjects();
+  return projects.map((project) => ({ params: { slug: project.id }, props: { project } }));
+}
+
+const { project } = Astro.props;
+const { title, summary, start_date, end_date, period, lab, labels } = project.data;
+const { Content } = await render(project);
+const duration = projectDuration(start_date, end_date);
+---
+<Shell path={projectPath(project.id)} title={title} description={summary} current="projects">
+  <article class="project">
+    <a class="project__back" href="/#projects">&larr; Back to projects</a>
+    <h1>{title}</h1>
+    {summary && <p class="project__lead">{summary}</p>}
+
+    <dl class="overview" aria-label="Project overview">
+      <div class="overview__row"><dt>When</dt><dd>{projectWhen(start_date, end_date)}</dd></div>
+      {duration && <div class="overview__row"><dt>Duration</dt><dd>{duration}</dd></div>}
+      {period && <div class="overview__row"><dt>Context</dt><dd>{period}</dd></div>}
+      {lab && <div class="overview__row"><dt>Laboratory</dt><dd>{lab}</dd></div>}
+      {labels.length > 0 && (
+        <div class="overview__row">
+          <dt>Stack and skills</dt>
+          <dd>
+            <ul class="pills">{labels.map((label) => <li class="pill">{label}</li>)}</ul>
+          </dd>
+        </div>
+      )}
+    </dl>
+
+    <div class="prose"><Content /></div>
+  </article>
+</Shell>

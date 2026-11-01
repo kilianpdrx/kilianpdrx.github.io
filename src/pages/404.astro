@@ -1,0 +1,13 @@
+---
+import Shell from '../layouts/Shell.astro';
+import { byTitle, getPublishedProjects, projectPath } from '../lib/projects';
+
+const projects = (await getPublishedProjects()).sort(byTitle);
+---
+<Shell path="/404.html">
+  <h1 class="page-title">Page not found</h1>
+  <p class="page-text">This page doesn't exist. Go back to the <a href="/">home page</a>, or open one of these projects:</p>
+  <ul class="page-list">
+    {projects.map(({ id, data }) => <li><a href={projectPath(id)}>{data.title}</a></li>)}
+  </ul>
+</Shell>
