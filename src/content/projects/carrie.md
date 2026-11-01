@@ -1,6 +1,4 @@
 ---
-layout: project
-type: project
 image: img/carrie/logo_carre.png
 title: "Carrie"
 start_date: 2024-09

@@ -1,6 +1,4 @@
 ---
-layout: project
-type: project
 image: img/Octorange/octorange.jpg
 title: "Octorange"
 start_date: 2021-02

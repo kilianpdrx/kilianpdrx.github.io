@@ -1,6 +1,4 @@
 ---
-layout: project
-type: project
 image: img/PDS_lasers/lapd.png
 title: "Semester project - optical computing"
 start_date: 2025-06

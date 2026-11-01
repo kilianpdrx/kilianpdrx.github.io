@@ -1,6 +1,4 @@
 ---
-layout: project
-type: project
 image: img/Milieux_reactifs/fin4.png
 title: "Reactive Media"
 start_date: 2023-11

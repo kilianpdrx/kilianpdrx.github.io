@@ -1,6 +1,4 @@
 ---
-layout: project
-type: project
 image: img/PDS_hylab/logo_proj_hylab.png
 title: "Semester project - electrode optimization"
 start_date: 2025-09

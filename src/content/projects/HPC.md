@@ -1,6 +1,4 @@
 ---
-layout: project
-type: project
 image: img/HPC/tsu.png
 title: "HPC"
 start_date: 2025-04

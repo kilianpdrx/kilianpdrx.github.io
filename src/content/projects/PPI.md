@@ -1,6 +1,4 @@
 ---
-layout: project
-type: project
 image: img/PPI/cover.png
 title: "Programming"
 start_date: 2022-03

@@ -1,6 +1,4 @@
 ---
-layout: project
-type: project
 image: img/droneload/logo_droneload.png
 title: "Droneload"
 start_date: 2023-02

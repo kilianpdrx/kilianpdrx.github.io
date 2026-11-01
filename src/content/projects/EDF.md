@@ -1,6 +1,4 @@
 ---
-layout: project
-type: project
 image: img/edf/data.png
 title: "EDF"
 start_date: 2023-06

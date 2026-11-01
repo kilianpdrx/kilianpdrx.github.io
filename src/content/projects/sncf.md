@@ -1,6 +1,4 @@
 ---
-layout: project
-type: project
 image: img/sncf/catenary.jpg
 title: "Catenary lifting"
 start_date: 2024-02
