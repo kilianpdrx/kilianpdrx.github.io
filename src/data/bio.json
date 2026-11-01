@@ -25,8 +25,8 @@
     ]
   },
   "interestsIntro": [
-    "My technical expertise lies at the intersection of microsystems, optics and intelligent software. From developing ground station architecture for CubeSat missions to designing microfluidic platforms at IMEC and characterizing high-power lasers at Coherent, I thrive on bridging the gap between embedded hardware and high performance computing. I am particularly driven by the challenge of building high-impact systems in multidisciplinary environments.",
-    "Outside of engineering, I’m deeply curious about the broader scientific landscape, especially astronomy and the mechanics of space exploration. Sport addict, I spend most of my free time on the water, improving my kitesurfing and pumpfoiling skills."
+    "I like working where microsystems, optics and software meet. I’ve worked on ground stations for CubeSats, microfluidic chips at IMEC and high-power lasers at Coherent, and I enjoy projects that combine hardware and software.",
+    "Outside of work, I’m interested in science in general, especially astronomy and space exploration. I also love sports and spend most of my free time on the water, kitesurfing and pumpfoiling."
   ],
   "interests": [
     {
@@ -51,9 +51,6 @@
       "name": "Robotics"
     },
     {
-      "name": "Machine Learning"
-    },
-    {
       "name": "Astronomy"
     }
   ],
@@ -62,7 +59,7 @@
       "name": "Experimental Systems",
       "keywords": [
         "Optical setups",
-        "Instrument control and automation (Python, LabVIEW)",
+        "Instrument control and automation",
         "Data acquisition",
         "System integration",
         "Microfluidics",
@@ -74,8 +71,9 @@
       "name": "Programming",
       "keywords": [
         "C",
-        "Python (NumPy, Pandas, scikit-learn, PyTorch, OpenCV, FastAPI, Streamlit)",
+        "Python",
         "Bash",
+        "LabVIEW",
         "CUDA",
         "MPI",
         "SQL"
