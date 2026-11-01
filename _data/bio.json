@@ -13,12 +13,14 @@
       {
         "network": "github",
         "username": "kilianpdrx",
-        "url": "https://github.com/kilianpdrx"
+        "url": "https://github.com/kilianpdrx",
+        "label": "GitHub"
       },
       {
         "network": "linkedin",
         "username": "Kilian Pouderoux",
-        "url": "https://www.linkedin.com/in/kilian-pouderoux-502184248/"
+        "url": "https://www.linkedin.com/in/kilian-pouderoux-502184248/",
+        "label": "LinkedIn"
       }
     ]
   },

@@ -6,8 +6,7 @@
       {% include about/social.html url=email_url name='envelope' label='Email' %}
       {% for profile in site.data.bio.basics.profiles %}
         {% assign icon_name = profile.network | downcase %}
-        {% assign label = profile.network | capitalize %}
-        {% include about/social.html url=profile.url name=icon_name label=label %}
+        {% include about/social.html url=profile.url name=icon_name label=profile.label %}
       {% endfor %}
     </div>
   </div>

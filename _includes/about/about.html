@@ -14,7 +14,7 @@
           {% for profile in site.data.bio.basics.profiles %}
             <a class="btn" href="{{ profile.url }}" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="{{ '/img/icons.svg' | prepend: site.baseurl }}#{{ profile.network | downcase }}"/></svg>
-              <span>{{ profile.network | capitalize }}</span>
+              <span>{{ profile.label }}</span>
             </a>
           {% endfor %}
           <a class="btn" href="{{ '/assets/Pouderoux_Kilian_EN.pdf' | prepend: site.baseurl }}" target="_blank" rel="noopener">

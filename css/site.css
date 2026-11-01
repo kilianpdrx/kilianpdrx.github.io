@@ -159,6 +159,7 @@ hr {
 @media (max-width: 480px) {
   .nav__brand { display: none; }
   .nav__inner { justify-content: center; }
+  .nav__links { flex-wrap: wrap; justify-content: center; row-gap: 0.25rem; }
 }
 
 /* Hero / About ------------------------------------------------------------ */
